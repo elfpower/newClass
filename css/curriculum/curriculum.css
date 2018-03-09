@@ -1,0 +1,134 @@
+@charset "UTF-8";
+.curriculum .main .header-warp {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+  background: #ffffff;
+  margin-bottom: .5rem;
+}
+.curriculum .main .header-warp .lesson-img {
+  flex: 1 0 30%;
+  max-width: 11.4rem;
+  height: 8rem;
+  line-height: 8rem;
+  text-align: center;
+  overflow: hidden;
+}
+.curriculum .main .header-warp .lesson-img img {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.1);
+}
+.curriculum .main .header-warp .lesson-info {
+  flex: 1;
+  margin-left: 1rem;
+  height: 8rem;
+  font-size: 1.2rem;
+  color: #999999;
+}
+.curriculum .main .header-warp .lesson-info .title {
+  font-size: 1.5rem;
+  color: #333333;
+}
+.curriculum .main .header-warp .lesson-info .teacher-name {
+  margin: 0.5rem 0;
+}
+.curriculum .main .tab-nav-warp {
+  background: #ffffff;
+  margin-bottom: .05rem;
+}
+.curriculum .main .tab-nav-warp .tabs {
+  display: flex;
+  height: 4rem;
+  line-height: 4rem;
+}
+.curriculum .main .tab-nav-warp .tabs > li {
+  flex: 1;
+  text-align: center;
+}
+.curriculum .main .tab-nav-warp .tabs > li > a {
+  display: inline-block;
+  height: 4rem;
+  font-size: 1.4rem;
+}
+.curriculum .main .tab-nav-warp .tabs .act > a {
+  color: #6496fa;
+  border-bottom: 0.2rem solid #6496fa;
+}
+.curriculum .main .con-nav-warp {
+  position: relative;
+}
+.curriculum .main .con-nav-warp .con-list {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #f5f5f5;
+}
+.curriculum .main .con-nav-warp .con-list > li {
+  margin-bottom: .1rem;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  height: 7rem;
+}
+.curriculum .main .con-nav-warp .con-list > li .progress {
+  color: #999999;
+}
+.curriculum .main .con-nav-warp .con-list > li .progress .number {
+  margin-right: .5rem;
+  font-size: 1.4rem;
+}
+.curriculum .main .con-nav-warp .con-list > li .progress .title {
+  font-size: 1.4rem;
+  color: #333333;
+}
+.curriculum .main .con-nav-warp .con-list > li .progress .type,
+.curriculum .main .con-nav-warp .con-list > li .progress .address {
+  display: block;
+  font-size: 1.2rem;
+  margin-top: .25rem;
+}
+.curriculum .main .con-nav-warp .con-list > li .task {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  background: url("../../img/curriculum/jiantou@2x.png") no-repeat 100% center;
+  background-size: 1.2rem;
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .curriculum .main .con-nav-warp .con-list > li .task {
+    background: url("../../img/curriculum/jiantou@3x.png") no-repeat 100% center;
+    background-size: 1.2rem;
+  }
+}
+.curriculum .main .con-nav-warp .con-list > li .task > a {
+  margin-right: 1.5rem;
+  color: #999999;
+}
+.curriculum .main .con-nav-warp .con-list > li .task .btn {
+  margin-right: 0;
+  border-radius: 2.5rem;
+  text-align: center;
+  width: 7.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  font-size: 1.3rem;
+  color: #ffffff;
+  background: #6496fa;
+  -webkit-box-shadow: 0 0.15rem 0.1rem rgba(100, 150, 250, 0.25);
+  -moz-box-shadow: 0 0.15rem 0.1rem rgba(100, 150, 250, 0.25);
+  box-shadow: 0 0.15rem 0.1rem rgba(100, 150, 250, 0.25);
+  cursor: pointer;
+}
+.curriculum .main .con-nav-warp .con-list > li .task .btn.curriculum .main .con-nav-warp .con-list > li .task .btn {
+  background: yellow;
+}
+.curriculum .main .con-nav-warp .con-list > li .task > input[type="button"] {
+  background: #6496fa;
+}

@@ -1,0 +1,137 @@
+@charset "UTF-8";
+.loaction-setting {
+  width: 100%;
+  max-width: 750px;
+}
+.loaction-setting .search-bar {
+  height: 4rem;
+  padding: .5rem 0;
+}
+.loaction-setting .search-bar .search-input {
+  display: block;
+  width: 90%;
+  height: 3rem;
+  margin: 0 auto;
+  border: 1px solid #eeeeee;
+  border-radius: 3rem;
+  background: #ffffff;
+  text-align: center;
+  color: #999999;
+  font-size: 1.2rem;
+}
+.loaction-setting .loaction-city,
+.loaction-setting .hot-city {
+  padding: 1rem 0 0;
+}
+.loaction-setting .loaction-city > dt,
+.loaction-setting .hot-city > dt {
+  padding-left: 1rem;
+  color: #999999;
+  font-size: 1.1rem;
+}
+.loaction-setting .loaction-city > dd > ul,
+.loaction-setting .hot-city > dd > ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 .5rem;
+}
+.loaction-setting .loaction-city > dd > ul > li,
+.loaction-setting .hot-city > dd > ul > li {
+  flex: 0 0 33.3%;
+  padding: .5rem;
+  height: 4rem;
+  text-align: center;
+}
+.loaction-setting .loaction-city > dd > ul > li > a,
+.loaction-setting .hot-city > dd > ul > li > a {
+  display: block;
+  border: 1px solid #eeeeee;
+  background: #ffffff;
+  color: #999999;
+  font-size: 1.1rem;
+  height: 100%;
+  line-height: 3rem;
+}
+.loaction-setting .loaction-city > dd > ul .act > a,
+.loaction-setting .hot-city > dd > ul .act > a {
+  border: 1px solid #6496fa;
+  color: #6496fa;
+}
+.loaction-setting .picker-box {
+  -webkit-user-select: none;
+}
+.loaction-setting .picker-box dt {
+  padding: .25rem 1rem;
+  background: #f5f5f5;
+  color: #333333;
+  height: 3.5rem;
+  line-height: 3rem;
+  font-size: 1.1rem;
+}
+.loaction-setting .picker-box dd {
+  padding: .4rem 1rem;
+  border-bottom: 1px solid #f5f5f5;
+  color: #333333;
+  height: 3.5rem;
+  line-height: 3rem;
+  font-size: 1.2rem;
+  background: #ffffff;
+}
+.loaction-setting .pro-picker,
+.loaction-setting .city-picker {
+  position: fixed;
+  top: 22rem;
+  bottom: 0;
+  background-color: #ffffff;
+  overflow: auto;
+  width: 100%;
+  max-width: 750px;
+  border-top: 1px solid #eeeeee;
+}
+.loaction-setting .city-picker li {
+  padding: .5rem 1rem;
+  border-bottom: 1px solid #f5f5f5;
+  color: #333333;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  font-size: 1.2rem;
+}
+.loaction-setting .navbar {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  width: 3rem;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  border-radius: 3rem;
+  padding: 1rem 0;
+}
+.loaction-setting .navbar a {
+  display: block;
+  text-align: center;
+  color: #6496fa;
+}
+.loaction-setting .navbar.active {
+  background-color: #6496fa;
+}
+.loaction-setting .navbar.active a {
+  color: #ffffff;
+}
+.loaction-setting .picker-box .prompt {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  background-color: #6496fa;
+  color: #ffffff;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}

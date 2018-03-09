@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>个人赛表单</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="../../libs/date-picker/datePicker.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/activity/single-form.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/common.css" />
+    <script src="../../libs/jq2.0.0.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../libs/date-picker/datePicker.js" type="text/javascript" charset="utf-8"></script>
+  </head>
+
+  <body class="single-form-page">
+    <div class="single-form">
+
+      <label class="name-bar">
+        <span>真实姓名</span>
+        <input id="name-input" class="name-input" type="text" placeholder="请填写参赛者姓名" />
+        <i class="">姓名有误，姓名为中文或英文</i>
+      </label>
+
+
+      <div class="sexy-bar">
+        <span>选手性别</span>
+
+        <label>
+          <input class="sexy-input" name="sex" type="radio" value="男" />
+          <span>男</span>
+        </label>
+
+        <label>
+          <input class="sexy-input" name="sex" type="radio" value="女" />
+          <span>女</span>
+        </label>
+        <i class="">请选择选手性别</i>
+      </div>
+
+      <label class="phone-bar">
+        <span>联系手机</span>
+        <input id="phone-input" class="phone-input" type="tel" placeholder="请填写联系手机" />
+        <i class="">手机号码有误，请重新输入</i>
+      </label>
+
+      <label class="idcard-bar">
+        <span>身份证号</span>
+        <input id="idcard-input" class="idcard-input" type="tel" placeholder="请填写身份证号码" />
+        <i class="">身份证号码有误，请重新输入</i>
+      </label>
+
+      <label class="birthday-bar">
+        <span>出生日期</span>
+        <input id="birthday-input" class="birthday-input" type="text" placeholder="请选择出生日期" readonly />
+        <i class="">出生日期有误，请重新选择</i>
+      </label>
+
+
+      <!--身份证正面照-->
+      <div class="idcard-front">
+        <div class="border">
+          <input type="file" id="front-file"  accept="image/png,image/jpeg,image/jpg"/>
+          <canvas id="front-canvas"></canvas>
+          <input type="hidden" id="front-base64"/>
+        </div>
+      </div>
+
+      <!--身份证背面照-->
+      <div class="idcard-back">
+        <div class="border">
+          <input type="file" id="back-file"  accept="image/png,image/jpeg,image/jpg"/>
+          <canvas id="back-canvas"></canvas>
+          <input type="hidden" id="back-base64"/>
+        </div>
+      </div>
+
+      <label class="teacher-bar">
+        <span>指导老师</span>
+        <input id="teacher-input" class="teacher-input" type="text" placeholder="请填写指导老师姓名" />
+        <i class="">填指导老师姓名有误</i>
+      </label>
+
+      <label class="t-phone-bar">
+        <span>老师手机</span>
+        <input id="t-phone-input" class="t-phone-input" type="tel" placeholder="请填写老师联系手机" />
+        <i class="">手机号码有误，请重新输入</i>
+      </label>
+
+      <label class="school-bar">
+        <span>就学机构</span>
+        <input id="school-input" class="school-input" type="text" placeholder="请填写就学机构" />
+        <i class="">err</i>
+      </label>
+
+      <label class="address-bar">
+        <span>证书邮寄</span>
+        <input id="address-input" class="address-input" type="text" placeholder="请填写证书邮寄地址" />
+        <i class="">err</i>
+      </label>
+
+      <div class="btn-box">
+        <a id="btn-submit" class="btn-submit">提交资料</a>
+      </div>
+
+
+    </div>
+  </body>
+
+</html>
+<script src="../../js/main.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../libs/myJS.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/activity/single-form.js" type="text/javascript" charset="utf-8"></script>

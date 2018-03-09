@@ -1,0 +1,82 @@
+@charset "UTF-8";
+.sign-up-type {
+  position: relative;
+  background: #ffffff;
+}
+.sign-up-type .type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 10rem;
+}
+.sign-up-type .type > label {
+  flex: 1;
+  text-align: center;
+}
+.sign-up-type .type > label .img-box > img {
+  width: 10.5rem;
+  height: 10.5rem;
+}
+.sign-up-type .type > label .radio-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.sign-up-type .type > label .radio-box > input[type='radio'] {
+  position: relative;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+}
+.sign-up-type .type > label .radio-box > input[type='radio']:after {
+  content: "";
+  position: absolute;
+  border: 1px solid #eeeeee;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+.sign-up-type .type > label .radio-box > input[type='radio']:checked:after {
+  border: none;
+  background: url("../../img/activity/xuan@2x.png") no-repeat center;
+  background-size: 100%;
+  animation: zoom-anima 0.3s both;
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .sign-up-type .type > label .radio-box > input[type='radio']:checked:after {
+    background: url("../../img/activity/xuan@3x.png") no-repeat center;
+    background-size: 100%;
+  }
+}
+.sign-up-type .type > label .radio-box > input[type='radio']:checked + .text {
+  color: #6496fa;
+}
+.sign-up-type .type > label .radio-box > span {
+  margin-left: .5rem;
+  font-size: 1.6rem;
+  color: #333333;
+}
+.sign-up-type .btn-bar {
+  position: relative;
+  top: 20rem;
+  width: 100%;
+  height: 4rem;
+}
+.sign-up-type .btn-bar .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4rem;
+  margin: 0 auto;
+  width: 80%;
+  height: 100%;
+  background: #6496fa;
+  color: #ffffff;
+  font-size: 1.5rem;
+  -webkit-box-shadow: 0 0.1rem 0.5rem #6496fa;
+  -moz-box-shadow: 0 0.1rem 0.5rem #6496fa;
+  box-shadow: 0 0.1rem 0.5rem #6496fa;
+}

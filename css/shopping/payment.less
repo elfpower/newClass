@@ -1,0 +1,223 @@
+@charset "UTF-8";
+@import url("../main.less");
+
+.payment-page {
+}
+
+.payment {
+  background: @g-body-bgc;
+  .order-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem 0;
+    background: @g-con-bgc;
+    .teacher {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      .avatar {
+        > img {
+          width: 3.5rem;
+          height: 3.5rem;
+        }
+      }
+
+      .name {
+        margin-left: 1rem;
+        font-size: @g-fs-xl;
+        color: @g-fc-b-d;
+        .tips {
+          font-size: @g-fs-normal;
+          color: @g-fc-g-d;
+
+        }
+      }
+    }
+
+    .price {
+      font-size: @g-fs-xl;
+      color: @g-fc-red;
+    }
+
+  }
+
+  .order-title {
+    font-size: @g-fs-xl;
+    color: @g-fc-b-d;
+    padding-left: 1rem;
+    background: @g-con-bgc;
+  }
+  .info-bar {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background: @g-con-bgc;
+    padding: 0 1rem 1rem;
+    margin-bottom: .5rem;
+
+    .date,
+    .time,
+    .address {
+      padding-left: 2rem;
+      flex: 0 0 50%;
+    }
+
+    .date {
+      .bgi("../../img/shopping/rili",1.2rem,0 center);
+    }
+    .time {
+      .bgi("../../img/shopping/shijian",1.2rem,0 center);
+    }
+    .address {
+      .bgi("../../img/shopping/dizhi",1.2rem,0 center);
+    }
+
+
+    > time {
+      font-size: @g-fs-normal;
+      color: @g-fc-g-d;
+    }
+
+    .address {
+      font-size: @g-fs-normal;
+      color: @g-fc-g-d;
+    }
+
+  }
+
+
+  .pay-details-bar,
+  .address-bar,
+  .pay-way-bar {
+    margin-bottom: .5rem;
+    > dl {
+      background: @g-fc-white;
+      padding-bottom: 1rem;
+      > dt {
+        position: relative;
+        padding-left: 3rem;
+        font-size: @g-fs-xl;
+        color: @g-fc-b-d;
+        height: 3.5rem;
+        line-height: 3.5rem;
+        border-bottom: 1px solid @g-brc-default;
+        &:after {
+          content: "";
+          position: absolute;
+          left: 1.5rem;
+          top: 50%;
+          width: .3rem;
+          height: 1.4rem;
+          background: @g-main-blue;
+          border-radius: .3rem;
+          transform: translate3d(-50%,-50%,0);
+        }
+      }
+      > dd {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        font-size: @g-fs-lg;
+        color: @g-fc-b-d;
+        padding: 0 1rem;
+        line-height: 2;
+      }
+
+    }
+  }
+
+  .pay-way-bar {
+    padding-bottom: 5rem;
+    > dl {
+      padding-bottom: 0;
+      > dd {
+        border-bottom: 1px solid @g-brc-default;
+        padding: 0;
+        > label {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 1rem;
+          height: 5rem;
+          .name-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            order: 0;
+            > img {
+              width: 2.2rem;
+              height: 2.2rem;
+            }
+            > span {
+              margin-left: 1rem;
+            }
+          }
+
+          input[type = 'radio'] {
+            order: 1;
+            position: relative;
+            width: 1.7rem;
+            height: 1.7rem;
+            border-radius: 50%;
+            background-color: @g-fc-white;
+
+            &:after {
+              content: "";
+              position: absolute;
+              border: 1px solid @g-brc-normal;
+              border-radius: 50%;
+              width: 100%;
+              height: 100%;
+            }
+            &:checked {
+              &:after {
+                border: 0;
+                .bgi("../../img/user-center/xuanze");
+                animation: zoom-anima .3s both;
+              }
+            }
+            &:checked + .name-bar {
+              > span {
+                color: @g-main-blue;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  .btn-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: @g-page-max-width;
+    height: 4.5rem;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    line-height: 4.5rem;
+    .price {
+      flex: 1;
+      text-align: right;
+      padding-right: 1rem;
+      color: @g-fc-b-l;
+      font-size: @g-fs-xl;
+    }
+    .btn {
+      display: block;
+      text-align: center;
+      flex: 0 0 11rem;
+      height: 100%;
+      background: @g-main-blue;
+      color: @g-fc-white;
+      font-size: @g-fs-xxl;
+    }
+  }
+
+
+}

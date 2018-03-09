@@ -1,0 +1,106 @@
+@charset "UTF-8";
+.detail-pay-page {
+  padding-bottom: 5rem;
+}
+.detail-pay {
+  background: #f5f5f5;
+}
+.detail-pay .img-box {
+  padding: 1rem;
+  width: 100%;
+  background: #ffffff;
+}
+.detail-pay .img-box > img {
+  width: 100%;
+}
+.detail-pay .info-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: #ffffff;
+  padding-left: 1rem;
+  margin-bottom: .5rem;
+}
+.detail-pay .info-bar > dl > dt {
+  position: relative;
+  padding-left: 1rem;
+  font-size: 1.5rem;
+  color: #333333;
+  height: 2rem;
+  line-height: 2rem;
+}
+.detail-pay .info-bar > dl > dt:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: .3rem;
+  height: 1.4rem;
+  background: #6496fa;
+  border-radius: .3rem;
+  transform: translate3d(-50%, -50%, 0);
+}
+.detail-pay .info-bar > dl > dd {
+  padding-left: 1rem;
+  font-size: 1.3rem;
+  color: #999999;
+}
+.detail-pay .detail {
+  background: #ffffff;
+}
+.detail-pay .detail > dl > dt {
+  position: relative;
+  padding-left: 2rem;
+  font-size: 1.5rem;
+  color: #333333;
+  height: 4rem;
+  line-height: 4rem;
+}
+.detail-pay .detail > dl > dt:after {
+  content: "";
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  width: .3rem;
+  height: 1.4rem;
+  background: #6496fa;
+  border-radius: .3rem;
+  transform: translate3d(-50%, -50%, 0);
+}
+.detail-pay .detail > dl > dd {
+  position: relative;
+  padding-left: 2.5rem;
+  font-size: 1.3rem;
+  color: #333333;
+  padding: 0 1rem;
+}
+.detail-pay .detail > dl > dd > img {
+  max-width: 100%;
+}
+.detail-pay .btn-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 750px;
+  height: 4.5rem;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  line-height: 4.5rem;
+}
+.detail-pay .btn-bar .price {
+  flex: 1;
+  text-align: center;
+  padding-right: 1rem;
+  color: #555555;
+  font-size: 1.5rem;
+}
+.detail-pay .btn-bar .btn {
+  display: block;
+  text-align: center;
+  flex: 0 0 50%;
+  height: 100%;
+  background: #6496fa;
+  color: #ffffff;
+  font-size: 1.6rem;
+}

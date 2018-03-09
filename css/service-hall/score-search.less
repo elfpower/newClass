@@ -1,0 +1,48 @@
+@charset "UTF-8";
+@import url("../main.less");
+
+
+.score-search-page {
+
+}
+
+
+.score-search {
+  > label {
+    display: block;
+    width: 100%;
+    height: 5rem;
+    padding: 0 1rem;
+    font-size: @g-fs-xl;
+    color: @g-fc-b-l;
+    line-height: 5rem;
+    border-bottom: 1px solid @g-brc-default;
+    background: @g-con-bgc;
+    >span {
+      margin-right: 1rem;
+    }
+    > input {
+      font-size: @g-fs-md;
+    }
+
+  }
+
+
+  .btn-bar {
+    margin: 15rem auto;
+    text-align: center;
+    .btn-submit {
+      display: inline-block;
+      width: 70%;
+      height: 4rem;
+      line-height: 4rem;
+      text-align: center;
+      background: @g-main-blue;
+      color: @g-fc-white;
+      font-size: @g-fs-xl;
+      border-radius: 4rem;
+      .g-box-sd(@c:@g-main-blue);
+    }
+  }
+
+}

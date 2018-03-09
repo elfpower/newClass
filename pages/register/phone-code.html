@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>手机注册</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+
+    <link rel="stylesheet" type="text/css" href="../../css/register/phone-code.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/common.css" />
+
+    <script src="../../libs/jq2.0.0.js" type="text/javascript" charset="utf-8"></script>
+  </head>
+
+  <body class="phone-code-page">
+    <div class="phone-code">
+
+      <label class="phone-bar">
+        <span>手机号码</span>
+        <input id="phone-input" class="phone-input" type="tel" placeholder="请输入手机号码" />
+        <i class="">手机号码有误，请重新输入</i>
+      </label>
+
+      <label class="code-bar">
+        <span>验证码</span>
+        <input id="code-input" class="code-input" type="tel" placeholder="请输入验证码" />
+        <input id="get-code" type="button" value="获取验证码" disabled="disabled" >
+        <i class="">验证码有误，请重新输入</i>
+      </label>
+
+      <div class="btn-box">
+        <a id="btn-next" class="btn-next">下一步</a>
+      </div>
+
+      <div class="to-test" style="text-align: center;margin-top: 5rem;">
+        <p>以下为伪数据测试，生产环境请删除</p>
+        <p>已注册号码：13611112222</p>
+        <p>假设正确的验证码：123456</p>
+      </div>
+
+    </div>
+  </body>
+
+</html>
+<script src="../../js/main.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../libs/myJS.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/register/phone-code.js" type="text/javascript" charset="utf-8"></script>

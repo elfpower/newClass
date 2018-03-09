@@ -1,0 +1,107 @@
+@charset "UTF-8";
+.choice-curriculum .tab-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 750px;
+  height: 4.5rem;
+  background: #6496fa;
+  text-align: center;
+  padding-top: .75rem;
+  z-index: 5;
+}
+.choice-curriculum .tab-bar > span {
+  display: inline-block;
+  line-height: 3rem;
+  font-size: 1.3rem;
+  color: #ffffff;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  padding: 0 1rem;
+  text-align: center;
+  transition: background-color 0.5s, color 0.5s;
+}
+.choice-curriculum .tab-bar > span:first-child {
+  border-left: 1px solid #ffffff;
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+}
+.choice-curriculum .tab-bar > span:last-child {
+  border-right: 1px solid #ffffff;
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+.choice-curriculum .tab-bar > span.act {
+  background-color: #ffffff;
+  color: #6496fa;
+}
+.choice-curriculum .tab-con {
+  position: relative;
+  height: 100%;
+}
+.choice-curriculum .tab-con > .con {
+  display: none;
+  position: absolute;
+  top: 4.5rem;
+  width: 100%;
+}
+.choice-curriculum .tab-con > .con > ul > li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+  height: 10rem;
+  background: #ffffff;
+  border-bottom: 1px solid #f5f5f5;
+}
+.choice-curriculum .tab-con > .con > ul > li .img-box {
+  flex: 0 0 40%;
+}
+.choice-curriculum .tab-con > .con > ul > li .img-box > img {
+  width: 100%;
+}
+.choice-curriculum .tab-con > .con > ul > li .info-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: self-start;
+  padding-left: 1rem;
+  flex: 1;
+  height: 100%;
+}
+.choice-curriculum .tab-con > .con > ul > li .info-box .title {
+  font-size: 1.5rem;
+  color: #333333;
+  line-height: 1;
+}
+.choice-curriculum .tab-con > .con > ul > li .info-box .teacher {
+  font-size: 1.2rem;
+  color: #999999;
+}
+.choice-curriculum .tab-con > .con > ul > li .info-box > time {
+  font-size: 1.2rem;
+  color: #999999;
+}
+.choice-curriculum .tab-con > .con > ul > li .info-box .sign-up {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-right: 1rem;
+}
+.choice-curriculum .tab-con > .con > ul > li .info-box .sign-up .num {
+  font-size: 1.2rem;
+  color: #999999;
+}
+.choice-curriculum .tab-con > .con > ul > li .info-box .sign-up .btn {
+  height: 2.5rem;
+  padding: 0 1rem;
+  background: #6496fa;
+  font-size: 1.3rem;
+  color: #ffffff;
+  border-radius: 2.5rem;
+  line-height: 2.5rem;
+  -webkit-box-shadow: 0 0.1rem 0.5rem #6496fa;
+  -moz-box-shadow: 0 0.1rem 0.5rem #6496fa;
+  box-shadow: 0 0.1rem 0.5rem #6496fa;
+}

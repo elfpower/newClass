@@ -1,0 +1,103 @@
+@charset "UTF-8";
+.group-form-page .group-form {
+  height: 100%;
+  background: #ffffff;
+}
+.group-form-page .group-form label {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  border-bottom: 1px solid #eeeeee;
+  padding: .5rem 1rem;
+  height: 5rem;
+  font-size: 1.5rem;
+  color: #555555;
+}
+.group-form-page .group-form label > span {
+  flex: 0 0 6rem;
+}
+.group-form-page .group-form label > input {
+  margin-left: 1rem;
+}
+.group-form-page .group-form label > input[type="button"] {
+  margin-left: 0;
+  font-style: normal;
+  box-shadow: 0 0.15rem 1rem rgba(100, 150, 250, 0.25);
+  border-radius: 2rem;
+  flex: 0 0 8rem;
+  height: 2.8rem;
+  line-height: 2.8rem;
+  font-size: 1.4rem;
+  color: #fff;
+  background: #6496fa;
+  cursor: pointer;
+}
+.group-form-page .group-form label > input[type="button"].on,
+.group-form-page .group-form label > input[type="button"][disabled="disabled"] {
+  box-shadow: none;
+  color: #fff;
+  background: #cccccc;
+}
+.group-form-page .group-form label > i {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  font-size: 1rem;
+  font-style: normal;
+  opacity: 0;
+  color: #ff2f4a;
+}
+.group-form-page .group-form label .code-input {
+  width: 15rem;
+}
+.group-form-page .group-form .btn-box {
+  margin: 7.5rem auto 0;
+  width: 100%;
+  text-align: center;
+}
+.group-form-page .group-form .btn-box .btn-next {
+  display: block;
+  border-radius: 2rem;
+  margin: 0 auto;
+  width: 80%;
+  height: 4rem;
+  line-height: 4rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: none;
+  color: #fff;
+  background: #cccccc;
+}
+.group-form-page .group-form .btn-box .btn-next.act {
+  box-shadow: 0 0.15rem 1rem rgba(100, 150, 250, 0.25);
+  color: #fff;
+  background: #6496fa;
+}
+.group-form-page .tips-in {
+  animation: tips-anima 0.6s both;
+}
+.group-form-page .tips-out {
+  animation: tips-anima 0.6s reverse;
+}
+@keyframes tips-anima {
+  0% {
+    opacity: 0;
+    transform: scale(0) translateX(200%);
+  }
+  1% {
+    opacity: 0;
+    transform: scale(0) translateX(150%);
+  }
+  25% {
+    transform: scale(0) translateX(110%);
+  }
+  50% {
+    transform: scale(1.5) translateX(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateX(0);
+  }
+}

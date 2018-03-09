@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>课程预约</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+
+    <link rel="stylesheet" type="text/css" href="../../css/curriculum/select-time.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/common.css" />
+    <script src="../../libs/jq2.0.0.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../libs/calendar/dateRange.js" type="text/javascript" charset="utf-8"></script>
+
+  </head>
+
+  <body class="select-time-page">
+    <div class="select-time">
+
+      <div class="top-bar">
+        <!--<a href="">前一天</a>-->
+        <div class="select-city-bar">全部区域</div>
+        <div class="select-time-bar" id="pickdate"></div>
+        <!--<a href="">后一天</a>-->
+      </div>
+
+      <ul class="teacher-list">
+
+        <li>
+          <div class="info">
+            <span class="title">辅导老师：郭老师</span>
+            <span class="type">上课时间：10月02日09:30-11:01</span>
+            <span class="address">地址：啊飒飒的</span>
+          </div>
+          <div class="task">
+            <input type="button" value="预约" />
+          </div>
+        </li>
+
+        <li>
+          <div class="info">
+            <span class="title">辅导老师：文老师</span>
+            <span class="type">上课时间：10月02日09:30-11:02</span>
+            <span class="address">地址：啊飒飒的</span>
+          </div>
+          <div class="task">
+            <input type="button" value="预约" />
+          </div>
+        </li>
+
+        <li>
+          <div class="info">
+            <span class="title">辅导老师：光老师</span>
+            <span class="type">上课时间：10月02日09:30-11:03</span>
+            <span class="address">地址：啊飒飒的</span>
+          </div>
+          <div class="task">
+            <input type="button" value="预约" />
+          </div>
+        </li>
+
+        <li>
+          <div class="info">
+            <span class="title">辅导老师：一老师</span>
+            <span class="type">上课时间：10月02日09:30-11:04</span>
+            <span class="address">地址：啊飒飒的</span>
+          </div>
+          <div class="task">
+            <input type="button" value="预约" />
+          </div>
+        </li>
+
+        <li>
+          <div class="info">
+            <span class="title">辅导老师：二老师</span>
+            <span class="type">上课时间：10月02日09:30-11:05</span>
+            <span class="address">地址：啊飒飒的</span>
+          </div>
+          <div class="task">
+            <input type="button" value="预约" />
+          </div>
+        </li>
+
+        <li>
+          <div class="info">
+            <span class="title">辅导老师：三老师</span>
+            <span class="type">上课时间：10月02日09:30-11:06</span>
+            <span class="address">地址：啊飒飒的</span>
+          </div>
+          <div class="task">
+            <input type="button" value="预约" />
+          </div>
+        </li>
+
+        <li>
+          <div class="info">
+            <span class="title">辅导老师：四老师</span>
+            <span class="type">上课时间：10月02日09:30-11:07</span>
+            <span class="address">地址：啊飒飒的</span>
+          </div>
+          <div class="task">
+            <input type="button" value="预约" />
+          </div>
+        </li>
+
+      </ul>
+
+      <div class="fix-black-mask">
+
+      </div>
+
+      <div class="bn-mask">
+        <div class="modal-mask">
+          <div class="modal-box">
+            <div class="close-btn">
+              <img src="../../img/curriculum/guanbi@3x.png" />
+            </div>
+            <div class="header">
+              信息核对
+            </div>
+            <div class="con">
+              <p>成人钢琴辅导课程第二课</p>
+              <p>辅导老师：郭老师</p>
+              <p>上课时间：10月02日09:30-11:00</p>
+              <p>上课地址：啊啊撒大苏打撒大苏打似的</p>
+            </div>
+            <div class="btnwarp">
+              <a href="curriculum.html">确定</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="select-city-fixbox">
+        <div class="fixbox-inner">
+          <div class="area-list">
+            <ul>
+              <li class="act">全部区域</li>
+              <li>白云</li>
+              <li>天河</li>
+              <li>越秀</li>
+              <li>荔湾</li>
+            </ul>
+          </div>
+          <div class="street-list">
+            <ul class="act">
+              <li>白云A村</li>
+              <li>白云B街</li>
+              <li>白云C路</li>
+              <li>天河A村</li>
+              <li>天河B街</li>
+              <li>天河C路</li>
+              <li>越秀A村</li>
+              <li>越秀B街</li>
+              <li>越秀C路</li>
+              <li>荔湾A村</li>
+              <li>荔湾B街</li>
+              <li>荔湾C路</li>
+            </ul>
+            <ul>
+              <li>白云A村</li>
+              <li>白云B街</li>
+              <li>白云C路</li>
+            </ul>
+            <ul>
+              <li>天河A村</li>
+              <li>天河B街</li>
+              <li>天河C路</li>
+            </ul>
+            <ul>
+              <li>越秀A村</li>
+              <li>越秀B街</li>
+              <li>越秀C路</li>
+            </ul>
+            <ul>
+              <li>荔湾A村</li>
+              <li>荔湾B街</li>
+              <li>荔湾C路</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </body>
+
+</html>
+<script src="../../js/main.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../libs/myJS.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/curriculum/select-time.js" type="text/javascript" charset="utf-8"></script>

@@ -1,0 +1,53 @@
+@charset "UTF-8";
+@import url("../main.less");
+
+@g-avater-img-WH : 6rem;
+@g-header-arrow-WH : 2rem;
+
+@g-tab-w : 32.5rem;
+@g-tab-h : 9rem;
+@g-tab-item-icon-WH :  4.5rem;
+
+@g-list-arrow-WH : 1.4rem;
+@g-list-item-h : 4.5rem;
+
+@g-btn-w : 34.5rem;
+@g-btn-h : 4rem;
+
+
+.user-info {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+
+  .listwarp {
+    background: @g-brc-default;
+    position: relative;
+    width: 100%;
+    box-shadow: 0 -.5rem 1rem @g-shadow-blue;
+    >ul {
+      margin-bottom: @g-con-margin-sm /2;
+      >li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: @g-con-bgc;
+        min-height: @g-list-item-h;
+        margin-bottom: 1px;
+        padding: @g-con-padding-lg;
+        .title {
+          flex: 0 0 10rem;
+          font-size: @g-fs-xl;
+          color: @g-fc-b-l;
+        }
+        .add-address {
+          display: block;
+          font-size: @g-fs-md;
+          color: @g-fc-g-d;
+          padding-right: 2rem;
+          .bgi('../../img/user-center/jiantou2',1.4rem,100% center);
+        }
+      }
+    }
+  }
+}

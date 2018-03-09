@@ -1,0 +1,248 @@
+@charset "UTF-8";
+@import url("../main.less");
+.service-talk-page {
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+}
+
+.service-talk {
+    position: relative;
+    .con {
+        padding: 1rem;
+        >ul {
+        	// overflow-y: auto;
+
+            >.msg-box {
+                margin-bottom: 2rem;
+                padding: .5rem;
+                >.msg {
+                    position: relative;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    .avatar {
+                        width: 3.75rem;
+                        height: 3.75rem;
+                        >img {
+                            width: 3.75rem;
+                            height: 3.75rem;
+                            border-radius: .4rem;
+                            overflow: hidden;
+                        }
+                    }
+                    .text {
+                        position: relative;
+                        top: 1.5rem;
+                        border-radius: 2rem;
+                        border-top-left-radius: 0;
+                        margin-left: 1rem;
+                        padding: 1.5rem 1rem;
+                        width: auto;
+                        max-width: 80%;
+                        background: #fff;
+                        .g-box-sd(@c: @g-fc-black-03);
+
+                        //
+                        > span {
+                        	display: block;
+                        	padding-left: 1rem;
+                        	padding-right: 1rem;
+                            font-size: @g-fs-lg;
+                            color: @g-fc-black;
+                        }
+
+                        > .img-box {
+                        	width: 100%;
+                        	padding: .5rem;
+                        	> img {
+                        		width: 100%;
+                        	}
+                        }
+
+                        > .spread-box {
+                        	position: relative;
+                        	width: 100%;
+                        	min-width: 25rem;
+                        	height: 10rem;
+                        	> a {
+                        		display: block;
+                        		padding: .5rem;
+                        		width: 100%;
+                        		height: 100%;
+                        		border: 1px solid #fff;
+                        		border-radius: .5rem;
+                        		background: #fff;
+                        		> .spread-title {
+                        			font-size: @g-fs-xl;
+                        			color: @g-fc-b-d;
+                        			font-weight: 300;
+                        		}
+                        		> .spread-con {
+                        			display: flex;
+                        			justify-content: space-between;
+                        			align-items: center;
+                        			> .spread-text {
+                        				flex: 1;
+                        				font-size: @g-fs-md;
+                        				color: @g-fc-g-l;
+                        			}
+                        			> .spread-img {
+                        				width: 4rem;
+                        				height: 4rem;
+                        			}
+                        		}
+                        		> .spread-bot {
+                        			display: flex;
+                        			justify-content: flex-start;
+                        			align-items: center;
+                        			position: absolute;
+                        			bottom: 0;
+                        			left: 0;
+                        			padding: 0 1rem;
+                        			width: 100%;
+                        			height: 2rem;
+                        			border-top: 1px solid @g-brc-normal;
+                        			border-bottom-left-radius: .5rem;
+                        			border-bottom-right-radius: .5rem;
+                        			> .logo {
+                        				width: 1.5rem;
+                        				height: 1.5rem;
+                        			}
+                        			> .from {
+                        				margin-left: 1rem;
+                        				font-size: @g-fs-normal;
+                        				color: @g-fc-g-d;
+                        			}
+                        		}
+
+                        	}
+                        }
+
+                    }
+                }
+            }
+            >.msg-box.me {
+                >.msg {
+                    justify-content: flex-end;
+                    .avatar {
+                        order: 1;
+                    }
+                    .text {
+                        order: 0;
+                        border-radius: 2rem;
+                        border-top-right-radius: 0;
+                        margin-right: 1rem;
+                        background-color: @g-main-blue;
+                        .g-box-sd(@c: @g-main-blue);
+                        box-shadow: ;
+                        >span {
+                        	padding-right: 0;
+                            color: @g-fc-white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .bot-bar {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        max-width: @g-page-max-width;
+        height: 4.5rem;
+        background: #fff;
+        .inner {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .chenge-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 0 0 4.5rem;
+            height: 100%;
+            .chenge {
+                >span {
+                    display: inline-block;
+                    width: 2rem;
+                    height: 2rem;
+                    &.istype {
+                        .bgi("../../img/service-talk/wenzi");
+                    }
+                    &.istape {
+                        .bgi("../../img/service-talk/yuyin");
+                    }
+                }
+            }
+        }
+        .input-bar {
+            flex: 1;
+            height: 100%;
+            > form {
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+                width: 100%;
+                height: 100%;
+                padding: .5rem 0;
+                >input {
+                    width: 100%;
+                    height: 3rem;
+                    padding-left: 2rem;
+                    border-radius: 3rem;
+                }
+                &.istype {
+                    >input[type='text'] {
+                    	display: block;
+                    	border: .2rem solid @g-brc-gary-l;
+                        font-size: @g-fs-lg;
+                        color: @g-fc-g-d;
+                        background: #fff;
+                    }
+                    >input[type='button'] {
+                        display: none;
+                    }
+                }
+                &.istape {
+                    >input[type='text'] {
+                        display: none;
+                    }
+                    >input[type='button'] {
+                        font-size: ;
+                        display: block;
+                    }
+                }
+            }
+        }
+        .face-func {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex: 0 0 6rem;
+            height: 100%;
+            .face {
+                >span {
+                    display: inline-block;
+                    width: 2rem;
+                    height: 2rem;
+                    .bgi("../../img/service-talk/biaoqing");
+                }
+            }
+            .func {
+                >span {
+                    display: inline-block;
+                    width: 2rem;
+                    height: 2rem;
+                    .bgi("../../img/service-talk/fasong");
+                }
+            }
+        }
+    }
+
+
+
+}

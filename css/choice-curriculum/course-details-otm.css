@@ -1,0 +1,348 @@
+@charset "UTF-8";
+.course-details-otm-page {
+  padding-bottom: 5rem;
+}
+.course-details-otm {
+  background: #f5f5f5;
+}
+.course-details-otm .img-box {
+  width: 100%;
+}
+.course-details-otm .img-box > img {
+  width: 100%;
+}
+.course-details-otm .info-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: #ffffff;
+  padding: 1rem;
+  margin-bottom: .5rem;
+  height: 7rem;
+}
+.course-details-otm .info-bar .title {
+  font-size: 1.5rem;
+  color: #333333;
+}
+.course-details-otm .info-bar > time {
+  font-size: 1.2rem;
+  color: #999999;
+}
+.course-details-otm .teachers {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  background: #ffffff;
+  margin-bottom: .5rem;
+  height: 5.5rem;
+}
+.course-details-otm .teachers .teacher {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.course-details-otm .teachers .teacher .avatar > img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.course-details-otm .teachers .teacher .name {
+  margin-left: 1rem;
+  font-size: 1.5rem;
+  color: #333333;
+}
+.course-details-otm .teachers .teacher .name .tips {
+  font-size: 1.2rem;
+  color: #999999;
+}
+.course-details-otm .tab .tit-list {
+  display: flex;
+  background: #fff;
+  border-bottom: 1px solid #f5f5f5;
+}
+.course-details-otm .tab .tit-list > li {
+  flex: 1;
+  height: 3.25rem;
+  text-align: center;
+  line-height: 3.25rem;
+}
+.course-details-otm .tab .tit-list > li > span {
+  display: inline-block;
+  color: #999999;
+  font-size: 1.4rem;
+  height: 100%;
+  border-bottom: 2px solid transparent;
+}
+.course-details-otm .tab .tit-list > li.act > span {
+  color: #6496fa;
+  border-bottom: 2px solid #6496fa;
+}
+.course-details-otm .tab .con-list {
+  position: relative;
+  min-height: 30rem;
+  padding-bottom: 5rem;
+}
+.course-details-otm .tab .con-list > li {
+  display: none;
+  position: absolute;
+  width: 100%;
+}
+.course-details-otm .tab .con-list .syllabus > dl {
+  border-bottom: 1px solid #f5f5f5;
+  background: #fff;
+}
+.course-details-otm .tab .con-list .syllabus > dl > dt {
+  position: relative;
+  width: 100%;
+  height: 3.25rem;
+  line-height: 3.25rem;
+  font-size: 1.3rem;
+  color: #333333;
+  padding-left: 3rem;
+  background: url("../../img/choice-curriculum/jiantou2@2x.png") no-repeat 90% center;
+  background-size: 1.5rem;
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .course-details-otm .tab .con-list .syllabus > dl > dt {
+    background: url("../../img/choice-curriculum/jiantou2@3x.png") no-repeat 90% center;
+    background-size: 1.5rem;
+  }
+}
+.course-details-otm .tab .con-list .syllabus > dl > dd {
+  position: relative;
+  font-size: 1.3rem;
+  color: #333333;
+  height: 0;
+  overflow: hidden;
+  padding-left: 3rem;
+  transition: height .5s ;
+}
+.course-details-otm .tab .con-list .syllabus > dl.act > dt {
+  background: url("../../img/choice-curriculum/jiantou1@2x.png") no-repeat 90% center;
+  background-size: 1.5rem;
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .course-details-otm .tab .con-list .syllabus > dl.act > dt {
+    background: url("../../img/choice-curriculum/jiantou1@3x.png") no-repeat 90% center;
+    background-size: 1.5rem;
+  }
+}
+.course-details-otm .tab .con-list .syllabus > dl.act > dt:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  width: 1rem;
+  height: 1rem;
+  background: url("../../img/choice-curriculum/1@2x.png") no-repeat center;
+  background-size: 100%;
+  transform: translateY(-50%);
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .course-details-otm .tab .con-list .syllabus > dl.act > dt:after {
+    background: url("../../img/choice-curriculum/1@3x.png") no-repeat center;
+    background-size: 100%;
+  }
+}
+.course-details-otm .tab .con-list .syllabus > dl.act > dt:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 1.5rem;
+  width: 1px;
+  height: 50%;
+  border-left: 1px dashed #eeeeee;
+  transform: translateX(-50%);
+}
+.course-details-otm .tab .con-list .syllabus > dl.act > dd {
+  height: 3.25rem;
+  line-height: 3.25rem;
+}
+.course-details-otm .tab .con-list .syllabus > dl.act > dd:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  width: 1rem;
+  height: 1rem;
+  background: url("../../img/choice-curriculum/2@2x.png") no-repeat center;
+  background-size: 100%;
+  transform: translateY(-50%);
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .course-details-otm .tab .con-list .syllabus > dl.act > dd:after {
+    background: url("../../img/choice-curriculum/2@3x.png") no-repeat center;
+    background-size: 100%;
+  }
+}
+.course-details-otm .tab .con-list .syllabus > dl.act > dd:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 1.5rem;
+  width: 1px;
+  height: 100%;
+  border-left: 1px dashed #eeeeee;
+  transform: translateX(-50%);
+}
+.course-details-otm .tab .con-list .syllabus > dl.act > dd:last-child:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 1.5rem;
+  width: 1px;
+  height: 50%;
+  border-left: 1px dashed #eeeeee;
+  transform: translateX(-50%);
+}
+.course-details-otm .tab .con-list .syllabus > dl.act > dd.on:after {
+  top: 38%;
+  background: url("../../img/choice-curriculum/3@2x.png") no-repeat center;
+  background-size: 100%;
+  animation: zoom-anima 1.5s infinite ease-in-out alternate;
+  transform-origin: center;
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .course-details-otm .tab .con-list .syllabus > dl.act > dd.on:after {
+    background: url("../../img/choice-curriculum/3@3x.png") no-repeat center;
+    background-size: 100%;
+  }
+}
+.course-details-otm .tab .con-list .detail {
+  background: #ffffff;
+  padding-bottom: 2rem;
+}
+.course-details-otm .tab .con-list .detail > dl > dt {
+  position: relative;
+  padding-left: 3rem;
+  font-size: 1.5rem;
+  color: #333333;
+  height: 4rem;
+  line-height: 4rem;
+}
+.course-details-otm .tab .con-list .detail > dl > dt:after {
+  content: "";
+  position: absolute;
+  left: 1.5rem;
+  top: 50%;
+  width: .3rem;
+  height: 1.4rem;
+  background: #6496fa;
+  border-radius: .3rem;
+  transform: translate3d(-50%, -50%, 0);
+}
+.course-details-otm .tab .con-list .detail > dl > dd {
+  position: relative;
+  padding-left: 2.5rem;
+  font-size: 1.3rem;
+  color: #333333;
+  height: 2rem;
+  line-height: 2rem;
+}
+.course-details-otm .tab .con-list .detail > dl > dd:after {
+  content: "";
+  position: absolute;
+  left: 1.5rem;
+  top: 50%;
+  width: .2rem;
+  height: .2rem;
+  background: #333333;
+  border-radius: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+.course-details-otm .tab .con-list .comment > ul > li {
+  display: flex;
+  padding: 1rem;
+  background: #ffffff;
+  min-height: 4.5rem;
+  border-bottom: 1px solid #f5f5f5;
+}
+.course-details-otm .tab .con-list .comment > ul > li .avatar > img {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+}
+.course-details-otm .tab .con-list .comment > ul > li .user-comment {
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+.course-details-otm .tab .con-list .comment > ul > li .user-comment .name-bar {
+  font-size: 1.2rem;
+  color: #999999;
+  display: flex;
+  justify-content: space-between;
+}
+.course-details-otm .tab .con-list .comment > ul > li .user-comment .text {
+  font-size: 1.2rem;
+  color: #333333;
+}
+.course-details-otm .btn-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 750px;
+  height: 4.5rem;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  line-height: 4.5rem;
+}
+.course-details-otm .btn-bar .price {
+  flex: 1;
+  text-align: right;
+  padding-right: 1rem;
+  color: #555555;
+  font-size: 1.5rem;
+}
+.course-details-otm .btn-bar .btn {
+  display: block;
+  text-align: center;
+  flex: 0 0 11rem;
+  height: 100%;
+  background: #6496fa;
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+@-webkit-keyframes zoom-anima {
+  from {
+    transform: scale(0.8);
+    opacity: .7;
+  }
+  to {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+@-moz-keyframes zoom-anima {
+  from {
+    transform: scale(0.8);
+    opacity: .7;
+  }
+  to {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+@-ms-keyframes zoom-anima {
+  from {
+    transform: scale(0.8);
+    opacity: .7;
+  }
+  to {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+@keyframes zoom-anima {
+  from {
+    transform: scale(0.8);
+    opacity: .7;
+  }
+  to {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}

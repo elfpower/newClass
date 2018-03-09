@@ -1,0 +1,433 @@
+@charset "UTF-8";
+
+// 宽度限制
+@g-page-max-width : 750px;//最大宽度
+
+@g-page-title-fs : 1.6rem;//页标题
+
+// 主色调
+@g-main-blue : rgba(100,150,250,1);// 蓝色
+
+// 常用按钮底色
+@g-btn-blue : rgba(100,150,250,1);// 蓝色
+@g-btn-gray : rgba(204,204,204,1);// 灰
+
+// 阴影颜色
+@g-shadow-blue : rgba(100,150,250,.25);// 蓝色
+
+// 点击颜色
+@g-tap-blue : rgba(100,150,250,.55);// 蓝色
+
+// 背景色
+@g-root-bgc : rgba(235,235,235,1); // 最底背景色
+@g-body-bgc : rgba(245,245,245,1); // 最底背景色
+@g-con-bgc  : rgba(255,255,255,1); // 最底背景色
+
+// 顶栏 底栏
+@g-fix-bar-height           : 4.5rem;//顶栏与底栏高度
+
+// 布局层级
+@g-zindex-top-abs : 999;// 绝对顶层
+@g-zindex-top     : 500; // 遮罩之上
+@g-zindex-mask    : 300; // 遮罩层
+@g-zindex-fix     : 100; // 悬浮层
+@g-zindex-default : 5; // 正常使用层
+@g-zindex-bot     : -1; // 常用层之下
+@g-zindex-bot-abs : -999; // 绝对底层
+
+//边距与留白变量
+@g-con-padding-min    : .1rem; //内容容器留白
+@g-con-padding-xs     : .25rem; //内容容器留白
+@g-con-padding-sm     : .5rem; //内容容器留白
+@g-con-padding-normal : 1rem;  //内容容器留白
+@g-con-padding-lg     : 1.5rem;//内容容器留白
+@g-con-padding-max    : 2rem;  //内容容器留白
+@g-con-padding-maxx   : 2.5rem;//内容容器留白
+
+@g-con-margin-min     : .2rem;//内容容器上下间距
+@g-con-margin-sm      : 1rem;//内容容器上下间距
+@g-con-margin-normal  : 2rem;//内容容器上下间距
+@g-con-margin-lg      : 3rem;//内容容器上下间距
+@g-con-margin-xl      : 4rem;//内容容器上下间距
+@g-con-margin-max     : 6rem;//内容容器上下间距
+
+
+// 文本字体
+@g-ff-all   : "punctuation", "PingFangSC-Regular", "Microsoft YaHei", "微软雅黑";
+@g-ff-ap    : "punctuation", "PingFangSC-Regular";
+@g-ff-my    : "Microsoft Yahei","微软雅黑";
+@g-ff-st    : "SimSun", "宋体";
+@g-ff-ar    : "Arial";
+@g-ff-vr    : "Verdana";
+
+
+//文本尺寸
+@g-fs-xmin      : .8rem;//最小字号
+@g-fs-min       : .9rem;//迷你字号
+@g-fs-xs        : 1rem;//加小字号
+@g-fs-sm        : 1.1rem;//偏小字号
+@g-fs-normal    : 1.2rem;//常用字号
+@g-fs-md        : 1.3rem;//中等字号
+@g-fs-lg        : 1.4rem;//偏大字号
+@g-fs-xl        : 1.5rem;//加大字号
+@g-fs-xxl       : 1.6rem;//加加大字号
+@g-fs-xxxl      : 1.7rem;//加加加大字号
+@g-fs-max       : 1.8rem;//超大字号
+@g-fs-tit-sm    : 2rem;//小标题字号
+@g-fs-tit-md    : 2.2rem;//中标题字号
+@g-fs-tit-lg    : 2.4rem;//中标题字号
+@g-fs-tit-xlg   : 2.6rem;//大标题字号
+@g-fs-tit-xxlg  : 2.8rem;//大标题字号
+
+//黑白透明颜色
+@g-fc-white      : rgba(255,255,255, 1);//惨无人道的白
+@g-fc-white-09   : rgba(255,255,255,.9);//淡白
+@g-fc-white-08   : rgba(255,255,255,.8);//淡白
+@g-fc-white-07   : rgba(255,255,255,.7);//淡白
+@g-fc-white-06   : rgba(255,255,255,.6);//淡白
+@g-fc-white-05   : rgba(255,255,255,.5);//淡白
+@g-fc-white-04   : rgba(255,255,255,.4);//淡白
+@g-fc-white-03   : rgba(255,255,255,.3);//淡白
+@g-fc-white-02   : rgba(255,255,255,.2);//淡白
+@g-fc-white-01   : rgba(255,255,255,.1);//丧心病狂的白
+@g-fc-black      : rgba(0,0,0, 1);//见所未见的黑
+@g-fc-black-09   : rgba(0,0,0,.9);//淡黑
+@g-fc-black-08   : rgba(0,0,0,.8);//淡黑
+@g-fc-black-07   : rgba(0,0,0,.7);//淡黑
+@g-fc-black-06   : rgba(0,0,0,.6);//淡黑
+@g-fc-black-05   : rgba(0,0,0,.5);//淡黑
+@g-fc-black-04   : rgba(0,0,0,.4);//淡黑
+@g-fc-black-03   : rgba(0,0,0,.3);//淡黑
+@g-fc-black-02   : rgba(0,0,0,.2);//淡黑
+@g-fc-black-01   : rgba(0,0,0,.1);//闻所未闻的黑
+
+// 常用文本颜色
+@g-fc-b-d        : rgba(51,51,51,1);//文本颜色 - 深黑
+@g-fc-b-l        : rgba(85,85,85,1);//文本颜色 - 浅黑
+@g-fc-g-d        : rgba(153,153,153,1);//文本颜色 - 深灰
+@g-fc-g-l        : rgba(187,187,187,1);//文本颜色 - 浅灰
+@g-fc-link-l     : rgba(153,153,153,1);//链接文本颜色- 浅灰
+@g-fc-link-d     : rgba(153,153,153,1);//链接文本颜色- 浅灰
+@g-fc-red        : rgba(255,47,74,1);// 文本 - 红
+
+//边框颜色
+@g-brc-default  : rgba(245,245,245,1);//常用边框颜色
+@g-brc-normal   : rgba(238,238,238,1);//常用边框颜色
+@g-brc-gary-l   : rgba(221,221,221,1);//常用边框颜色
+@g-brc-gary     : rgba(187,187,187,1);//常用边框颜色
+@g-brc-dark     : rgba(110,110,110,1);//常用边框颜色
+
+
+//背景图 @2x 与 @3x 判断转换
+.bgi(@url,@size:100%,@ps:center,@rp:no-repeat){
+  background: url("@{url}@2x.png") @rp @ps;
+  background-size: @size;
+  @media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio: 3){
+    background: url("@{url}@3x.png") @rp @ps;
+    background-size: @size;
+  }
+}
+
+
+//重置
+.g-reset(){
+  *{margin:0; padding:0;}
+  ul,ol{list-style:none;}
+  img{border:none;}
+  input,select,textarea{outline:none; border:none; background:none;}
+  textarea{resize:none;}
+  a{text-decoration:none;}
+}
+
+//文字垂直居中
+.g-txt-vc(@h){
+  height: @h;
+  line-height: @h;
+}
+//文字全居中
+.g-txt-vac(@h){
+  height: @h;
+  line-height: @h;
+  text-align: center;
+}
+
+//超出一行省略
+.ellipsis (){/*文字超出隐藏并在句尾添加省略号*/
+  display: block;/*独占一行*/
+  overflow: hidden;/*自动隐藏文字*/
+  text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+  white-space: nowrap;/*强制不换行*/
+}
+
+//超出两行省略 -webkit-内核通用
+.ellipsis-2 (){
+  display: -webkit-box;
+  overflow: hidden;
+  white-space: normal !important;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+//消除子元素 inline-block 间的间隙
+.ib-spc () {
+  letter-spacing: -.4em; //消除子元素 inline-block 间的间隙
+  * {
+    letter-spacing: normal; //重置文本间隙
+  }
+}
+
+
+//内容容器
+.g-con-box (@pos: r, @w: 100%, @h: auto, @p: @g-con-padding-normal, @m: @g-con-margin-normal, @bor: b) {
+  .g-pos (@pos);
+  width: @w;
+  height: @h;
+  padding: @p;
+  margin: @m  auto;
+  .g-bor (@bor);
+  .g-box-sd ();
+}
+
+
+
+//容器宽高
+.g-box-wh (@w: 100%, @h: 100%) {
+  width: @w;
+  height: @h;
+}
+
+//定位布局
+.g-pos-box(@w: 1rem, @h: 1rem, @pos: absolute){
+  width: @w;
+  height: @h;
+  position: @pos;
+  left:0;
+  top:0;
+}
+
+//定位居中
+.g-pos-box-cc(@w: 1rem, @h: 1rem, @pos: absolute){
+  width: @w;
+  height: @h;
+  position: @pos;
+  left: 50%;
+  top: 50%;
+  margin-left: -@w / 2;
+  margin-top: -@h / 2;
+}
+
+//剧中水平块
+.g-bc () {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+//居中布局
+.bc-d(@w:1rem){
+  width: @w;
+  .g-bc();
+}
+
+//正方形
+.g-wh(@w){
+  width: @w;
+  height: @w;
+}
+
+//浮动
+.g-fl(@f:left;){
+    float: @f;
+    display: inline;
+}
+.g-fr(@f:right){
+  float: @f;
+  display: inline;
+}
+//定位
+.g-rel(@rel:relative){
+  position: @rel;
+}
+.g-abs(@abs:absolute){
+  position: @abs;
+}
+.g-fix(@fix:fixed){
+  position: @fix;
+}
+//全局定位
+.g-pos (r){
+  position: relative;
+}
+.g-pos (a){
+  position: absolute;
+}
+.g-pos (f){
+  position: fixed;
+}
+
+
+
+
+//边框
+.g-bor (a, @w: .1rem, @type: solid, @c: @g-brc-normal) {
+  border: @w  @type  @c;
+}
+.g-bor (t, @w: .1rem, @type: solid, @c: @g-brc-normal) {
+  border-top: @w  @type  @c;
+}
+.g-bor (r, @w: .1rem, @type: solid, @c: @g-brc-normal) {
+  border-right: @w  @type  @c;
+}
+.g-bor (b, @w: .1rem, @type: solid, @c: @g-brc-normal) {
+  border-bottom: @w  @type  @c;
+}
+.g-bor (l, @w: .1rem, @type: solid, @c: @g-brc-normal) {
+  border-left: @w  @type  @c;
+}
+
+//shadow
+.g-box-sd (@x: 0, @y: .1rem, @r: .5rem, @c: @g-brc-normal) {
+  -webkit-box-shadow: @x  @y  @r  @c;
+     -moz-box-shadow: @x  @y  @r  @c;
+          box-shadow: @x  @y  @r  @c;
+}
+//display
+.g-db(){
+  display: block;
+}
+.g-di(){
+  display: inline;
+}
+.g-dib(){
+  display: inline-block;
+}
+.g-dib7(){
+  display: inline-block;
+  *display: inline;
+  *zoom:1;
+}
+.g-dt(){
+  display:table;
+}
+.g-dn(){
+  display: none;
+}
+
+
+//z-index
+.g-zindex(@index:1){
+  z-index: @index;
+}
+
+//宽高限制
+.g-min-w(@width){
+  min-width: @width;
+  _width:@width;
+}
+.g-max-w(@width,@id){
+  max-width: @width;
+  _width:~'expression(document.getElementById("@{id}").offsetHeight>parseInt("@{width}")?"@{width}": "auto")';
+  overflow:hidden;
+}
+.g-min-h(@height){
+  min-height: @height;
+  _height:@height;
+}
+.g-max-h(@height,@id){
+  max-height: @height;
+  _height:~'expression(document.getElementById("@{id}").offsetHeight>parseInt("@{height}")?"@{height}": "auto")';
+  overflow:hidden;
+}
+//三角
+.g-triangle (t,@w:.5rem,@color:@g-brc-normal){
+  border-style:solid dashed dashed dashed;
+  border-color:@color transparent transparent transparent;
+  border-width:@w;
+}
+.g-triangle (r,@w:.5rem,@color:@g-brc-normal){
+  border-style:dashed solid dashed dashed;
+  border-color:transparent @color transparent transparent;
+  border-width:@w;
+}
+.g-triangle (b,@w:.5rem,@color:@g-brc-normal){
+  border-style:dashed dashed solid dashed;
+  border-color:transparent transparent @color transparent;
+  border-width:@w;
+}
+.g-triangle (l,@w:.5rem,@color:@g-brc-normal){
+  border-style:dashed dashed dashed solid;
+  border-color:transparent transparent transparent @color;
+  border-width:@w;
+}
+.g-triangle (@_,@w:.5rem,@color:@g-brc-normal){
+  .triangle-compatible();
+}
+//边框附加内容
+.g-triangle-compatible()
+{
+  width: 0;
+  height: 0;
+  overflow:hidden;
+}
+//单独方向
+.g-triangle-b(@w:.5rem,@color:@g-brc-normal){
+  border-style:solid dashed dashed dashed;
+  border-color:@color transparent transparent transparent;
+  border-width:@w;
+  .g-triangle-compatible();
+}
+.g-triangle-l(@w:.5rem,@color:@g-brc-normal){
+  border-style:dashed solid dashed dashed;
+  border-color:transparent @color transparent transparent;
+  border-width:@w;
+  .g-triangle-compatible();
+}
+.g-triangle-t(@w:.5rem,@color:@g-brc-normal){
+  border-style:dashed dashed solid dashed;
+  border-color:transparent transparent @color transparent;
+  border-width:@w;
+  .g-triangle-compatible();
+}
+.g-triangle-r(@w:.5rem,@color:@g-brc-normal){
+  border-style:dashed dashed dashed solid;
+  border-color:transparent transparent transparent @color;
+  border-width:@w;
+  .g-triangle-compatible();
+}
+//透明度
+.g-opa(@opacity: 80) {
+  opacity: @opacity / 100;
+  filter: ~"alpha(opacity=@{opacity})";
+}
+
+.g-rgba(@red, @green, @blue, @alpha:1){
+  @filtercolor:`(_f = function(d){ var v = (parseInt(d)|0).toString(16);return v.length<2 ? "0"+v : v;},'#'+_f(@{alpha}*255) + _f(@{red}) + _f(@{green})+ _f(@{blue}))`;
+  background-color: ~'rgba(@{red},@{green},@{blue},@{alpha})';
+  -ms-filter:~"progid:DXImageTransform.Microsoft.gradient(startColorstr='@{filtercolor}',endColorstr='@{filtercolor}')";
+  filter:~"progid:DXImageTransform.Microsoft.gradient(startColorstr='@{filtercolor}',endColorstr='@{filtercolor}')";
+}
+//清浮动
+.g-clearfix() {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+  }
+  &:after {
+    clear: both;
+  }
+}
+//文字省略号
+.g-ellipsis(@fs:@g-fs-normal, @lh:1.4,@ff:@g-ff-my){
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: @fs/@lh  @ff;
+}
+// @substract单位为%
+.g-ellipsis-w(@substract:0) {
+  .g-ellipsis();
+  width:100% - @substract;
+}

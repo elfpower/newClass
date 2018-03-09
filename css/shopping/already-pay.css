@@ -1,0 +1,103 @@
+@charset "UTF-8";
+.already-pay {
+  background: #f5f5f5;
+}
+.already-pay .order-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  background: #ffffff;
+  border-bottom: 1px solid #f5f5f5;
+  height: 3.5rem;
+}
+.already-pay .order-title > h3 {
+  font-size: 1.5rem;
+  color: #333333;
+  font-weight: 500;
+}
+.already-pay .order-title > span {
+  font-size: 1.5rem;
+  color: #6496fa;
+}
+.already-pay .order-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem 0;
+  background: #ffffff;
+}
+.already-pay .order-details .teacher {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.already-pay .order-details .teacher .avatar > img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.already-pay .order-details .teacher .name {
+  margin-left: 1rem;
+  font-size: 1.5rem;
+  color: #333333;
+}
+.already-pay .order-details .teacher .name .tips {
+  font-size: 1.2rem;
+  color: #999999;
+}
+.already-pay .order-details .price {
+  font-size: 1.5rem;
+  color: #333333;
+}
+.already-pay .info-bar {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  background: #ffffff;
+  padding: 0 1rem 1rem;
+  margin-bottom: .5rem;
+}
+.already-pay .info-bar .date,
+.already-pay .info-bar .time,
+.already-pay .info-bar .address {
+  padding-left: 2rem;
+  flex: 0 0 50%;
+}
+.already-pay .info-bar .date {
+  background: url("../../img/shopping/rili@2x.png") no-repeat 0 center;
+  background-size: 1.2rem;
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .already-pay .info-bar .date {
+    background: url("../../img/shopping/rili@3x.png") no-repeat 0 center;
+    background-size: 1.2rem;
+  }
+}
+.already-pay .info-bar .time {
+  background: url("../../img/shopping/shijian@2x.png") no-repeat 0 center;
+  background-size: 1.2rem;
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .already-pay .info-bar .time {
+    background: url("../../img/shopping/shijian@3x.png") no-repeat 0 center;
+    background-size: 1.2rem;
+  }
+}
+.already-pay .info-bar .address {
+  background: url("../../img/shopping/dizhi@2x.png") no-repeat 0 center;
+  background-size: 1.2rem;
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .already-pay .info-bar .address {
+    background: url("../../img/shopping/dizhi@3x.png") no-repeat 0 center;
+    background-size: 1.2rem;
+  }
+}
+.already-pay .info-bar > time {
+  font-size: 1.2rem;
+  color: #999999;
+}
+.already-pay .info-bar .address {
+  font-size: 1.2rem;
+  color: #999999;
+}

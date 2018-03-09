@@ -1,0 +1,51 @@
+@charset "UTF-8";
+@import url("../main.less");
+
+
+.tasks-page {
+
+}
+
+.tasks {
+  > ul {
+    > li {
+      width: 100%;
+      height: 7.5rem;
+      background: @g-con-bgc;
+      border-bottom: 1px solid @g-brc-default;
+      > a {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 7.5rem;
+        padding: 1rem;
+        .img-box {
+          flex: 0 0 9rem;
+          > img {
+            border-radius: .2rem;
+            width: 100%;
+          }
+        }
+
+        .title {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex: 1;
+          margin-left: 1rem;
+          .bgi("../../img/task-and-note/jiantou",1.4rem,100% center);
+          .name {
+            flex: 1;
+            font-size: @g-fs-xxl;
+            color: @g-fc-b-d;
+          }
+          .more {
+            flex: 0 0 4.5rem;
+            font-size: @g-fs-lg;
+            color: @g-fc-g-d;
+          }
+        }
+      }
+    }
+  }
+}

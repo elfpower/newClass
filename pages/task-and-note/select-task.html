@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>作业筛选</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+
+    <link rel="stylesheet" type="text/css" href="../../css/task-and-note/select-task.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/common.css" />
+    <script src="../../libs/jq2.0.0.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../libs/calendar/dateRange.js" type="text/javascript" charset="utf-8"></script>
+
+  </head>
+
+  <body class="select-task-page">
+    <div class="select-task">
+
+      <div class="top-bar">
+        <div class="select-type-bar">作业筛选</div>
+        <div class="select-time-bar" id="pickdate"></div>
+      </div>
+
+      <ul class="task-list">
+
+        <li>
+          <div class="info">
+            <span class="title">成人零基础钢琴辅导</span>
+            <span class="type">作业布置：郭老师</span>
+            <span class="date">2017-10-16 第十课作业</span>
+          </div>
+          <div class="task">
+            <input class="btn-get" type="button" value="领作业" />
+          </div>
+        </li>
+
+        <li>
+          <div class="info">
+            <span class="title">成人零基础钢琴辅导</span>
+            <span class="type">作业布置：郭老师</span>
+            <span class="date">2017-10-15 第九课作业</span>
+          </div>
+          <div class="task">
+            <input type="button" value="待批改" />
+          </div>
+        </li>
+
+        <li>
+          <div class="info">
+            <span class="title">成人零基础钢琴辅导</span>
+            <span class="type">作业布置：郭老师</span>
+            <span class="date">2017-10-14 第八课作业</span>
+          </div>
+          <div class="task">
+            <input type="button" value="待提交" />
+          </div>
+        </li>
+
+        <li>
+          <div class="info">
+            <span class="title">成人零基础钢琴辅导</span>
+            <span class="type">作业布置：郭老师</span>
+            <span class="date">2017-10-13 第七课作业</span>
+          </div>
+          <div class="task">
+            <input type="button" value="已完成" />
+          </div>
+        </li>
+
+      </ul>
+
+      <div class="fix-black-mask"></div>
+
+      <!--作业筛选下拉框 -begin -->
+      <div class="select-task-fixbox">
+        <div class="fixbox-inner">
+          <div class="type-list">
+
+            <ul>
+              <li class="act">全部作业</li>
+              <li>领作业</li>
+              <li>待提交</li>
+              <li>待批改</li>
+              <li>已完成</li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+      <!--作业筛选下拉框 -end -->
+
+      <div class="bn-mask">
+        <div class="modal-mask">
+          <div class="modal-box">
+            <div class="close-btn">
+              <img src="../../img/curriculum/guanbi@3x.png" />
+            </div>
+            <div class="con">
+              <p> 点评老师</p>
+              <p> 即可领取作业</p>
+
+            </div>
+            <div class="btnwarp">
+              <a href="../../pages/curriculum/comment-teacher.html">立即前往</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+
+</html>
+<script src="../../js/main.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../libs/myJS.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/task-and-note/select-task.js" type="text/javascript" charset="utf-8"></script>

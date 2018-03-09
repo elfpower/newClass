@@ -1,0 +1,227 @@
+@charset "UTF-8";
+.payment {
+  background: #f5f5f5;
+}
+.payment .order-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem 0;
+  background: #ffffff;
+}
+.payment .order-details .teacher {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.payment .order-details .teacher .avatar > img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.payment .order-details .teacher .name {
+  margin-left: 1rem;
+  font-size: 1.5rem;
+  color: #333333;
+}
+.payment .order-details .teacher .name .tips {
+  font-size: 1.2rem;
+  color: #999999;
+}
+.payment .order-details .price {
+  font-size: 1.5rem;
+  color: #ff2f4a;
+}
+.payment .order-title {
+  font-size: 1.5rem;
+  color: #333333;
+  padding-left: 1rem;
+  background: #ffffff;
+}
+.payment .info-bar {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  background: #ffffff;
+  padding: 0 1rem 1rem;
+  margin-bottom: .5rem;
+}
+.payment .info-bar .date,
+.payment .info-bar .time,
+.payment .info-bar .address {
+  padding-left: 2rem;
+  flex: 0 0 50%;
+}
+.payment .info-bar .date {
+  background: url("../../img/shopping/rili@2x.png") no-repeat 0 center;
+  background-size: 1.2rem;
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .payment .info-bar .date {
+    background: url("../../img/shopping/rili@3x.png") no-repeat 0 center;
+    background-size: 1.2rem;
+  }
+}
+.payment .info-bar .time {
+  background: url("../../img/shopping/shijian@2x.png") no-repeat 0 center;
+  background-size: 1.2rem;
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .payment .info-bar .time {
+    background: url("../../img/shopping/shijian@3x.png") no-repeat 0 center;
+    background-size: 1.2rem;
+  }
+}
+.payment .info-bar .address {
+  background: url("../../img/shopping/dizhi@2x.png") no-repeat 0 center;
+  background-size: 1.2rem;
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .payment .info-bar .address {
+    background: url("../../img/shopping/dizhi@3x.png") no-repeat 0 center;
+    background-size: 1.2rem;
+  }
+}
+.payment .info-bar > time {
+  font-size: 1.2rem;
+  color: #999999;
+}
+.payment .info-bar .address {
+  font-size: 1.2rem;
+  color: #999999;
+}
+.payment .pay-details-bar,
+.payment .address-bar,
+.payment .pay-way-bar {
+  margin-bottom: .5rem;
+}
+.payment .pay-details-bar > dl,
+.payment .address-bar > dl,
+.payment .pay-way-bar > dl {
+  background: #ffffff;
+  padding-bottom: 1rem;
+}
+.payment .pay-details-bar > dl > dt,
+.payment .address-bar > dl > dt,
+.payment .pay-way-bar > dl > dt {
+  position: relative;
+  padding-left: 3rem;
+  font-size: 1.5rem;
+  color: #333333;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  border-bottom: 1px solid #f5f5f5;
+}
+.payment .pay-details-bar > dl > dt:after,
+.payment .address-bar > dl > dt:after,
+.payment .pay-way-bar > dl > dt:after {
+  content: "";
+  position: absolute;
+  left: 1.5rem;
+  top: 50%;
+  width: .3rem;
+  height: 1.4rem;
+  background: #6496fa;
+  border-radius: .3rem;
+  transform: translate3d(-50%, -50%, 0);
+}
+.payment .pay-details-bar > dl > dd,
+.payment .address-bar > dl > dd,
+.payment .pay-way-bar > dl > dd {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  font-size: 1.4rem;
+  color: #333333;
+  padding: 0 1rem;
+  line-height: 2;
+}
+.payment .pay-way-bar {
+  padding-bottom: 5rem;
+}
+.payment .pay-way-bar > dl {
+  padding-bottom: 0;
+}
+.payment .pay-way-bar > dl > dd {
+  border-bottom: 1px solid #f5f5f5;
+  padding: 0;
+}
+.payment .pay-way-bar > dl > dd > label {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  height: 5rem;
+}
+.payment .pay-way-bar > dl > dd > label .name-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  order: 0;
+}
+.payment .pay-way-bar > dl > dd > label .name-bar > img {
+  width: 2.2rem;
+  height: 2.2rem;
+}
+.payment .pay-way-bar > dl > dd > label .name-bar > span {
+  margin-left: 1rem;
+}
+.payment .pay-way-bar > dl > dd > label input[type='radio'] {
+  order: 1;
+  position: relative;
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+.payment .pay-way-bar > dl > dd > label input[type='radio']:after {
+  content: "";
+  position: absolute;
+  border: 1px solid #eeeeee;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+.payment .pay-way-bar > dl > dd > label input[type='radio']:checked:after {
+  border: 0;
+  background: url("../../img/user-center/xuanze@2x.png") no-repeat center;
+  background-size: 100%;
+  animation: zoom-anima 0.3s both;
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .payment .pay-way-bar > dl > dd > label input[type='radio']:checked:after {
+    background: url("../../img/user-center/xuanze@3x.png") no-repeat center;
+    background-size: 100%;
+  }
+}
+.payment .pay-way-bar > dl > dd > label input[type='radio']:checked + .name-bar > span {
+  color: #6496fa;
+}
+.payment .btn-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 750px;
+  height: 4.5rem;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  line-height: 4.5rem;
+}
+.payment .btn-bar .price {
+  flex: 1;
+  text-align: right;
+  padding-right: 1rem;
+  color: #555555;
+  font-size: 1.5rem;
+}
+.payment .btn-bar .btn {
+  display: block;
+  text-align: center;
+  flex: 0 0 11rem;
+  height: 100%;
+  background: #6496fa;
+  color: #ffffff;
+  font-size: 1.6rem;
+}

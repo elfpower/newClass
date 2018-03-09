@@ -1,0 +1,18 @@
+@charset "UTF-8";
+.activity-page {
+  padding-bottom: 5rem;
+}
+.activity {
+  background: #ffffff;
+}
+.activity .activity-list {
+  position: relative;
+}
+.activity .activity-list > li .con .img-box {
+  display: block;
+  padding: 1rem;
+}
+.activity .activity-list > li .con .img-box > img {
+  width: 100%;
+  max-width: 100%;
+}

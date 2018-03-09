@@ -1,0 +1,58 @@
+@charset "UTF-8";
+@import url("../main.less");
+
+.homework-page {
+  width: 100%;
+  max-width: @g-page-max-width;
+  margin: 0 auto;
+}
+
+
+.homework {
+  width: 100%;
+
+  .homework-list {
+    > li {
+      padding: 1rem;
+      background: @g-con-bgc;
+      border-bottom: 1px solid @g-brc-default;
+      >a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        .title {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 2rem;
+          >span {
+            font-size: @g-fs-lg;
+            color: @g-fc-b-l;
+          }
+          >time {
+            font-size: @g-fs-normal;
+            color: @g-fc-g-l;
+          }
+        }
+        .teacher {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          height: 3rem;
+          >img {
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+          }
+          >span {
+            margin-left: 1rem;
+            font-size: @g-fs-md;
+            color: @g-fc-g-l;
+          }
+        }
+
+      }
+    }
+  }
+
+}

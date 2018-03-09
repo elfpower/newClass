@@ -1,0 +1,129 @@
+@charset "UTF-8";
+@import url("../main.less");
+
+@g-label-h : 5rem; // 输入框组高度
+@g-input-h : 2rem; // 输入框高度
+@g-type-change-btn-wh : 1.6rem; // 密码显示状态切换按钮宽高
+
+
+.phone-code-page {
+  .phone-code {
+    height: 100%;
+    background: @g-con-bgc;
+
+    // 输入框组
+    label {
+      position: relative;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      position: relative;
+      border-bottom: 1px solid @g-brc-normal;
+      padding: .5rem 1rem;
+      height: @g-label-h;
+      font-size: @g-fs-xl;
+      color: @g-fc-b-l;
+
+      > span {
+        flex: 0 0 6rem;
+      }
+
+      > input {
+        margin-left: 1rem;
+      }
+
+      > input[type = "button"] {
+        margin-left: 0;
+        font-style: normal;
+        box-shadow: 0 .15rem 1rem @g-shadow-blue;
+        border-radius: 2rem;
+        flex: 0 0 8rem;
+        height: 2.8rem;
+        line-height: 2.8rem;
+        font-size: @g-fs-lg;
+        color: #fff;
+        background: @g-btn-blue;
+        cursor: pointer;
+        &.on,
+        &[disabled = "disabled"] {
+          box-shadow: none;
+          color: #fff;
+          background: rgba(204,204,204,1);
+        }
+      }
+
+      > i {
+
+        display: inline-block;
+        position: absolute;
+        bottom: 0;
+        width: 50%;
+        font-size: @g-fs-xs;
+        font-style: normal;
+        opacity: 0;
+        color: @g-fc-red;
+      }
+
+      .code-input {
+        width: 15rem;
+      }
+
+    }
+
+
+
+    // 登录按钮
+    .btn-box {
+      margin: 7.5rem auto 0;
+      width: 100%;
+      text-align: center;
+      .btn-next {
+        display: block;
+        border-radius: 2rem;
+        margin: 0 auto;
+        width: 80%;
+        height: 4rem;
+        line-height: 4rem;
+        font-size: @g-fs-xl;
+        cursor: pointer;
+        box-shadow: none;
+        color: #fff;
+        background: rgba(204,204,204,1);
+
+        &.act {
+          box-shadow: 0 .15rem 1rem @g-shadow-blue;
+          color: #fff;
+          background: @g-btn-blue;
+        }
+      }
+    }
+
+
+  }
+
+
+  .tips-in {
+    animation: tips-anima .6s both;
+  }
+  .tips-out {
+    animation: tips-anima .6s reverse ;
+  }
+  @keyframes tips-anima {
+    0%{
+      opacity: 0;
+      transform: scale(0) translateX(200%);
+    }
+    1% {
+      opacity: 0;
+      transform: scale(0) translateX(150%);
+    }
+    25% {transform: scale(0)  translateX(110%);}
+    50% {
+      transform: scale(1.5) translateX(0) ;
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1) translateX(0);
+    }
+  }
+}

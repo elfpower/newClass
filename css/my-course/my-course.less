@@ -1,0 +1,158 @@
+@charset "UTF-8";
+@import url("../main.less");
+
+@g-lesson-img-h : 8rem;
+@g-lesson-img-max-w : 11.4rem;
+
+@g-tabs-height: 4rem;
+
+@g-circle-out-border-c : @g-main-blue;
+@g-circle-in-border-c : rgba(234,241,255,1);
+@g-circle-out-wh : 4rem;
+// @g-circle-in-wh : 3.2rem;
+@g-circle-in-wh : (@g-circle-out-wh * .8);
+@g-progress-bar-text-c : rgba(104,153,250,1);
+
+.my-course {
+
+  .lesson-list {
+    >li {
+      > a {
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: @g-con-padding-normal;
+        background: @g-con-bgc;
+        margin-bottom: .5rem;
+        .lesson-img {
+          flex: 1 0 30%;
+          max-width: @g-lesson-img-max-w;
+          height: @g-lesson-img-h;
+          line-height: @g-lesson-img-h;
+          text-align: center;
+          overflow: hidden;
+          img {
+            width: 100%;
+            background: @g-fc-black-01;
+          }
+        }
+
+        .lesson-info {
+          flex: 1;
+          margin-left: @g-con-margin-sm;
+          height: @g-lesson-img-h;
+          font-size: @g-fs-normal;
+          color: @g-fc-g-d;
+          >div {
+            margin-bottom: .5rem;
+          }
+          .title {
+            font-size: @g-fs-xl;
+            color: @g-fc-b-d;
+          }
+
+          .cycle,
+          .time {
+            padding-left: 2rem;
+          }
+
+          .cycle {
+            .bgi('../../img/my-course/rili', 1.2rem);
+            background-position: .4rem center ;
+          }
+
+          .time {
+            .bgi('../../img/my-course/shijian', 1.2rem);
+            background-position: .4rem center ;
+          }
+
+        }
+
+
+        .progress-bar {
+          flex: 0 0 8rem;
+          margin-left: .5rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          .circle {
+            width: @g-circle-out-wh;
+            height: @g-circle-out-wh;
+            position: relative;
+            border-radius: 50%;
+            background: @g-circle-out-border-c;
+            // box-shadow: inset 0 0 .15rem .1rem @g-circle-in-border-c;
+          }
+
+          .pie_left,
+          .pie_right {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            // background: @g-circle-out-border-c;
+            border-radius: 50%;
+          }
+
+          .circle-left,
+          .circle-right {
+            width: 100%;
+            height: 100%;
+            background: @g-circle-in-border-c;
+            // box-shadow: inset 0 0 .2rem .1rem @g-circle-in-border-c;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+
+          .pie_right,
+          .circle-right {
+            clip: rect(0, auto, auto, @g-circle-out-wh/2);
+          }
+
+          .pie_left,
+          .circle-left {
+            clip: rect(0, @g-circle-out-wh/2, auto, 0);
+          }
+
+          .mask {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: @g-circle-in-wh;
+            height: @g-circle-in-wh;
+            border-radius: 50%;
+            left:( @g-circle-out-wh - @g-circle-in-wh ) / 2;
+            top: ( @g-circle-out-wh - @g-circle-in-wh ) / 2;
+            background: #fff;
+            position: absolute;
+            text-align: center;
+            line-height: 5rem;
+            font-weight: bold;
+            font-size: @g-fs-xs;
+            color: @g-main-blue;
+          }
+
+          .text {
+            margin-top: .75rem;
+            font-size: @g-fs-xs;
+            color: @g-progress-bar-text-c;
+            text-align: center;
+          }
+
+
+        }
+
+
+      }
+    }
+  }
+
+
+
+}
+

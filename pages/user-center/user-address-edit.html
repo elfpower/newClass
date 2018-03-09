@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>编辑地址</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+
+    <link rel="stylesheet" type="text/css" href="../../css/user-center/user-address-edit.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../../libs/three-linkage/three-linkage-ui.min.css" />
+    <script src="../../libs/jq2.0.0.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../libs/three-linkage/city-picker.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../libs/three-linkage/three-linkage-ui.min.js" type="text/javascript" charset="utf-8"></script>
+  </head>
+
+  <body class="user-address-edit-page">
+    <div class="user-address-edit">
+
+      <div class="listwarp">
+
+        <ul class="">
+
+          <li>
+            <span class="title">收货人</span>
+            <div class="text">
+              <input type="text" value="刘毅" placeholder="请填写真实姓名" />
+            </div>
+          </li>
+          <li>
+            <span class="title">联系电话</span>
+            <div class="text">
+              <input type="number" value="13688887777" placeholder="请填写手机号码" />
+            </div>
+          </li>
+          <li>
+            <span class="title">所在地区</span>
+            <div class="text">
+              <input type='text' id='city-picker' class="city-picker" placeholder='请选择省市区县' value="广东省 广州市 越秀区" />
+            </div>
+          </li>
+          <li>
+            <div class="text textarea-box">
+              <textarea name="" rows="" cols="" placeholder="请填写详细地址">啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</textarea>
+            </div>
+          </li>
+          <li>
+            <span class="title">设为默认</span>
+            <label class="text">
+              <input type="checkbox" class="checkbox" value="" />
+              <div class="lay">
+              	<div class="circle-btn"></div>
+              </div>
+            </label>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="btn-bar">
+        <a href="">保存地址</a>
+      </div>
+
+    </div>
+  </body>
+
+</html>
+<script src="../../js/main.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../libs/myJS.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/user-center/user-address-edit.js" type="text/javascript" charset="utf-8"></script>

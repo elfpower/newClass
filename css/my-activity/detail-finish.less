@@ -1,0 +1,119 @@
+@charset "UTF-8";
+@import url("../main.less");
+
+.detail-finish-page {
+  padding-bottom: 5rem;
+}
+
+.detail-finish {
+  background: @g-body-bgc;
+
+  .img-box {
+    padding: 1rem;
+    width: 100%;
+    background: @g-con-bgc;
+    > img {
+      width: 100%;
+    }
+  }
+
+  .info-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: @g-con-bgc;
+    padding-left: 1rem;
+    margin-bottom: .5rem;
+    > dl {
+      > dt  {
+        position: relative;
+        padding-left: 1rem;
+        font-size: @g-fs-xl;
+        color: @g-fc-b-d;
+        height: 2rem;
+        line-height: 2rem;
+        &:after {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 50%;
+          width: .3rem;
+          height: 1.4rem;
+          background: @g-main-blue;
+          border-radius: .3rem;
+          transform: translate3d(-50%,-50%,0);
+        }
+      }
+
+      > dd {
+        padding-left: 1rem;
+        font-size: @g-fs-md;
+        color: @g-fc-g-d;
+      }
+    }
+  }
+
+  .detail {
+    background: @g-fc-white;
+    // padding-bottom: 5rem;
+    > dl {
+      > dt {
+        position: relative;
+        padding-left: 2rem;
+        font-size: @g-fs-xl;
+        color: @g-fc-b-d;
+        height: 4rem;
+        line-height: 4rem;
+        &:after {
+          content: "";
+          position: absolute;
+          left: 1rem;
+          top: 50%;
+          width: .3rem;
+          height: 1.4rem;
+          background: @g-main-blue;
+          border-radius: .3rem;
+          transform: translate3d(-50%,-50%,0);
+        }
+      }
+      > dd {
+        position: relative;
+        padding-left: 2.5rem;
+        font-size: @g-fs-md;
+        color: @g-fc-b-d;
+        padding: 0 1rem;
+
+        > img {
+          max-width: 100%;
+        }
+
+      }
+
+    }
+
+
+  }
+
+
+  .btn-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: @g-page-max-width;
+    height: 4.5rem;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    line-height: 4.5rem;
+    .btn {
+      display: block;
+      text-align: center;
+      flex: 1;
+      height: 100%;
+      background: @g-main-blue;
+      color: @g-fc-white;
+      font-size: @g-fs-xxl;
+    }
+  }
+
+}

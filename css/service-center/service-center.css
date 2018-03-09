@@ -1,0 +1,116 @@
+@charset "UTF-8";
+.service-center {
+  background: #ffffff;
+}
+.service-center .header-warp {
+  display: flex;
+  width: 100%;
+  height: 10rem;
+  box-shadow: 0 0.15rem 1rem rgba(100, 150, 250, 0.25);
+}
+.service-center .header-warp > div {
+  flex: 0 0 50%;
+  width: 50%;
+  height: 100%;
+}
+.service-center .header-warp > div > a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+.service-center .header-warp > div > a > img {
+  width: 4rem;
+}
+.service-center .header-warp > div > a > span {
+  color: #555555;
+  margin-left: 1.5rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.service-center .header-warp div:first-child:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 20%;
+  width: 1px;
+  height: 60%;
+  background: #c8dcff;
+}
+.service-center .list-consultation {
+  position: relative;
+}
+.service-center .list-consultation:before {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  width: 90%;
+  height: 1px;
+  background: #f5f5f5;
+  transform: translateX(5%);
+}
+.service-center .list-consultation > dl {
+  padding-top: 3rem;
+}
+.service-center .list-consultation > dl > dt {
+  padding: 0 1.5rem;
+  font-size: 1.3rem;
+  color: #999999;
+}
+.service-center .list-consultation > dl > dd ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 2.5rem;
+}
+.service-center .list-consultation > dl > dd ul > li {
+  margin-top: 2rem;
+  flex: 0 0 25%;
+}
+.service-center .list-consultation > dl > dd ul > li > a {
+  display: block;
+  text-align: center;
+}
+.service-center .list-consultation > dl > dd ul > li > a img {
+  width: 2.5rem;
+}
+.service-center .list-consultation > dl > dd ul > li > a p {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  color: #555555;
+}
+.service-center .list-more > dl {
+  padding-top: 2.5rem;
+}
+.service-center .list-more > dl > dt {
+  padding: 0 1.5rem;
+  font-size: 1.3rem;
+  color: #999999;
+}
+.service-center .list-more > dl > dd {
+  padding-top: 1.5rem;
+}
+.service-center .list-more > dl > dd ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.service-center .list-more > dl > dd ul > li {
+  flex: 0 0 33.3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.2rem;
+  margin-bottom: .5rem;
+}
+.service-center .list-more > dl > dd ul > li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  height: 80%;
+  font-size: 1.2rem;
+  color: #333333;
+  background: #f2f4f8;
+  border-radius: .2rem;
+}

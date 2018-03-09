@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>设置定位</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+
+    <link rel="stylesheet" type="text/css" href="../../css/location-setting/location-setting.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/common.css" />
+
+    <script src="../../libs/jq2.0.0.js" type="text/javascript" charset="utf-8"></script>
+  </head>
+
+  <body class="loaction-setting-page">
+    <div class="loaction-setting">
+
+      <input type="text" class="search-hidden" readonly hidden="hidden">
+
+      <div class="search-bar">
+        <input type="text" class="search-input" value="" placeholder="请输入城市名" />
+      </div>
+
+      <dl class="loaction-city">
+        <dt>定位城市</dt>
+        <dd>
+          <ul>
+            <li class="act">
+              <!-- 可用 href传值 也可在js传值-->
+              <a href="../curriculum/curriculum.html?city=广州">广州</a>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+
+      <dl class="hot-city">
+        <dt>热门城市</dt>
+        <dd>
+          <!--热门城市请勿超过 6 项 ， 会被下面列表覆盖-->
+          <ul>
+            <li>
+              <a href="../curriculum/curriculum.html?city=北京">北京</a>
+            </li>
+            <li>
+              <a href="../curriculum/curriculum.html?city=上海">上海</a>
+            </li>
+            <li>
+              <a href="../curriculum/curriculum.html?city=广州">广州</a>
+            </li>
+            <li>
+              <a href="../curriculum/curriculum.html?city=杭州">杭州</a>
+            </li>
+            <li>
+              <a href="../curriculum/curriculum.html?city=深圳">深圳</a>
+            </li>
+            <li>
+              <a href="../curriculum/curriculum.html?city=成都">成都</a>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+
+    </div>
+  </body>
+
+</html>
+<script src="../../js/main.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../libs/myJS.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/location-setting/location-setting.js" type="text/javascript" charset="utf-8"></script>

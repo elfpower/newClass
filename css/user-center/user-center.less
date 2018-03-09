@@ -1,0 +1,171 @@
+@charset "UTF-8";
+@import url("../main.less");
+
+@g-avater-img-WH : 6rem;
+@g-header-arrow-WH : 2rem;
+
+@g-tab-w : 32.5rem;
+@g-tab-h : 9rem;
+@g-tab-item-icon-WH :  4.5rem;
+
+@g-list-arrow-WH : 1.4rem;
+@g-list-item-h : 4.5rem;
+
+@g-btn-w : 34.5rem;
+@g-btn-h : 4rem;
+
+.user-center {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+
+  .headerwarp {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: @g-con-padding-lg;
+    padding-bottom: 6rem;
+    width: 100%;
+    background: @g-main-blue;
+    .avatar {
+      display: flex;
+      align-items: center;
+      >img {
+        border-radius: 50%;
+        width: @g-avater-img-WH;
+        height: @g-avater-img-WH;
+        background: rgba(0,0,0,.1);
+      }
+      .info {
+        margin-left: @g-con-margin-sm ;
+        color: @g-fc-white ;
+        .name {
+          font-size: @g-fs-tit-sm;
+          margin-bottom: @g-con-margin-sm;
+        }
+        .number {
+          font-size: @g-fs-lg;
+        }
+      }
+    }
+    .arrow-right {
+      i {
+        display: block;
+        width: @g-header-arrow-WH;
+        height: @g-header-arrow-WH;
+        // .bgi('img/jiantou');
+        .bgi('../../img/user-center/jiantou');
+      }
+    }
+  }
+
+
+  .tabwarp {
+    position: relative;
+    max-width: @g-tab-w;
+    width: 90%;
+    height: @g-tab-h;
+    margin: -@g-tab-h/2 auto 0;
+    background: @g-con-bgc;
+    box-shadow: 0 .15rem 1rem @g-shadow-blue;
+    border-top-left-radius: .4rem;
+    border-top-right-radius: .4rem;
+    ul {
+      display: flex;
+      height: 100%;
+      >li {
+        flex: 1;
+        >a {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: @g-con-padding-normal 0;
+          .icon {
+            width: @g-tab-item-icon-WH;
+            height: @g-tab-item-icon-WH;
+            margin-bottom: @g-con-padding-sm;
+          }
+          .title {
+            font-size: @g-fs-md;
+            color: @g-fc-b-d ;
+          }
+        }
+        &:nth-child(1) {
+          >a {
+            .icon {
+              .bgi('../../img/user-center/che');
+            }
+          }
+        }
+        &:nth-child(2) {
+          >a {
+            .icon {
+              .bgi('../../img/user-center/daifu');
+            }
+          }
+        }
+        &:nth-child(3) {
+          >a {
+            .icon {
+              .bgi('../../img/user-center/yifu');
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  .listwarp {
+    background: @g-brc-default;
+    position: relative;
+    width: 100%;
+    box-shadow: 0 -.5rem 1rem @g-shadow-blue;
+    >ul {
+      margin-bottom: @g-con-margin-sm /2;
+      >li {
+        > a {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background: @g-con-bgc;
+          height: @g-list-item-h;
+          margin-bottom: 1px;
+          padding: @g-con-padding-lg;
+          .title {
+            font-size: @g-fs-xl;
+            color: @g-fc-b-l;
+          }
+          .arrow-right {
+            >i {
+              display: block;
+              width: @g-list-arrow-WH;
+              height: @g-list-arrow-WH;
+              .bgi('../../img/user-center/jiantou2')
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+  .btnwarp {
+    width: 100%;
+    margin: @g-con-margin-xl auto @g-con-margin-max;
+    .btn {
+      width: @g-btn-w;
+      max-width: 90%;
+      height: @g-btn-h;
+      margin: 0 auto;
+      text-align: center;
+      line-height: @g-btn-h;
+      background: @g-btn-blue;
+      border-radius: @g-btn-h;
+      font-size: @g-fs-xl;
+      color: @g-fc-white;
+    }
+  }
+
+}

@@ -1,0 +1,405 @@
+@charset "UTF-8";
+.select-time-page .select-time .top-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 4.5rem;
+  width: 100%;
+  background: #6496fa;
+  padding: 1rem;
+}
+.select-time-page .select-time .top-bar .select-city-bar,
+.select-time-page .select-time .top-bar .select-time-bar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 3rem;
+  min-width: 40%;
+  height: 3rem;
+  line-height: 3rem;
+  font-size: 1.4rem;
+  color: #ffffff;
+  background: #7faaff;
+  background: url("../../img/curriculum/jiantou3@2x.png") no-repeat 90% center;
+  background-size: 1.3rem;
+  padding: 0 4rem 0 2rem;
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .select-time-page .select-time .top-bar .select-city-bar,
+  .select-time-page .select-time .top-bar .select-time-bar {
+    background: url("../../img/curriculum/jiantou3@3x.png") no-repeat 90% center;
+    background-size: 1.3rem;
+  }
+}
+.select-time-page .select-time .top-bar .select-time-bar:empty:before {
+  content: "请选择日期";
+}
+.select-time-page .select-time .teacher-list {
+  background: #f5f5f5;
+}
+.select-time-page .select-time .teacher-list > li {
+  margin-bottom: .1rem;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  height: 7rem;
+}
+.select-time-page .select-time .teacher-list > li .info {
+  color: #999999;
+}
+.select-time-page .select-time .teacher-list > li .info .title {
+  font-size: 1.4rem;
+  color: #333333;
+}
+.select-time-page .select-time .teacher-list > li .info .type {
+  display: block;
+  font-size: 1.2rem;
+  margin-top: .75rem;
+}
+.select-time-page .select-time .teacher-list > li .task {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.select-time-page .select-time .teacher-list > li .task > a {
+  padding-right: 1.5rem;
+  background: url("../../img/curriculum/jiantou@2x.png") no-repeat center;
+  background-size: 100%;
+  background-position: 100% center;
+  background-size: 1.2rem;
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .select-time-page .select-time .teacher-list > li .task > a {
+    background: url("../../img/curriculum/jiantou@3x.png") no-repeat center;
+    background-size: 100%;
+  }
+}
+.select-time-page .select-time .teacher-list > li .task > input[type="button"] {
+  border-radius: 2.5rem;
+  text-align: center;
+  width: 7.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  font-size: 1.3rem;
+  color: #ffffff;
+  background: #6496fa;
+  -webkit-box-shadow: 0 0.15rem 0.1rem rgba(100, 150, 250, 0.25);
+  -moz-box-shadow: 0 0.15rem 0.1rem rgba(100, 150, 250, 0.25);
+  box-shadow: 0 0.15rem 0.1rem rgba(100, 150, 250, 0.25);
+  cursor: pointer;
+}
+.select-time-page .select-time .fix-black-mask {
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+.select-time-page .select-time .bn-mask {
+  display: none;
+}
+.select-time-page .select-time .modal-mask {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.select-time-page .select-time .modal-mask .modal-box {
+  position: relative;
+  top: -3rem;
+  width: 80%;
+  min-width: 26rem;
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.select-time-page .select-time .modal-mask .modal-box .close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 2.1rem;
+  height: 2.1rem;
+}
+.select-time-page .select-time .modal-mask .modal-box .close-btn > img {
+  width: 100%;
+}
+.select-time-page .select-time .modal-mask .modal-box .header {
+  margin-top: .5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #6496fa;
+}
+.select-time-page .select-time .modal-mask .modal-box .con {
+  padding: 0 1rem;
+}
+.select-time-page .select-time .modal-mask .modal-box .con > p {
+  line-height: 2;
+  font-size: 1.5rem;
+  color: #333333;
+}
+.select-time-page .select-time .modal-mask .modal-box .btnwarp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  text-align: center;
+}
+.select-time-page .select-time .modal-mask .modal-box .btnwarp a {
+  width: 11rem;
+  height: 3.2rem;
+  line-height: 3.2rem;
+  font-size: 1.4rem;
+  color: #ffffff;
+  background: #6496fa;
+  border-radius: 3.2rem;
+}
+.select-time-page .select-city-fixbox {
+  display: none;
+  position: fixed;
+  top: 4.5rem;
+  width: 100%;
+  height: 22rem;
+  max-width: 750px;
+}
+.select-time-page .select-city-fixbox .fixbox-inner {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+}
+.select-time-page .select-city-fixbox .fixbox-inner > div {
+  overflow-x: auto;
+  min-height: 100%;
+}
+.select-time-page .select-city-fixbox .fixbox-inner .area-list {
+  position: relative;
+  flex: 0 0 10rem;
+  background: #f5f5f5;
+}
+.select-time-page .select-city-fixbox .fixbox-inner .area-list > ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.select-time-page .select-city-fixbox .fixbox-inner .area-list > ul > li {
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  padding-left: 2rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  font-size: 1.4rem;
+  color: #555555;
+}
+.select-time-page .select-city-fixbox .fixbox-inner .area-list > ul > li.act {
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  background: #fff;
+  color: #6496fa;
+}
+.select-time-page .select-city-fixbox .fixbox-inner .street-list {
+  position: relative;
+  flex: 1;
+  background: #fff;
+}
+.select-time-page .select-city-fixbox .fixbox-inner .street-list > ul {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.select-time-page .select-city-fixbox .fixbox-inner .street-list > ul.act {
+  display: block;
+}
+.select-time-page .select-city-fixbox .fixbox-inner .street-list > ul > li {
+  height: 3rem;
+  line-height: 3rem;
+  font-size: 1.3rem;
+  color: #555555;
+  padding: 0 1rem;
+  background: #fff;
+  border-bottom: 1px solid #eeeeee;
+}
+.select-time-page .select-city-fixbox .fixbox-inner .street-list > ul > li.act {
+  color: #6496fa;
+}
+.ta_calendar {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  max-width: 750px;
+}
+.ta_calendar .dateRangeDateTable {
+  width: 100%;
+}
+.ta_calendar .dateRangeDateTable caption {
+  height: 4rem;
+  line-height: 4rem;
+  font-size: 1.8rem;
+  color: #fff;
+}
+.ta_calendar .dateRangeDateTable thead:before {
+  content: "";
+  position: absolute ;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8rem;
+  background: url("../../img/curriculum/date-bg@2x.png") no-repeat center;
+  background-size: 100%;
+  z-index: -1;
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .ta_calendar .dateRangeDateTable thead:before {
+    background: url("../../img/curriculum/date-bg@3x.png") no-repeat center;
+    background-size: 100%;
+  }
+}
+.ta_calendar .dateRangeDateTable thead tr,
+.ta_calendar .dateRangeDateTable tbody tr {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 4rem;
+}
+.ta_calendar .dateRangeDateTable thead tr th,
+.ta_calendar .dateRangeDateTable tbody tr th,
+.ta_calendar .dateRangeDateTable thead tr td,
+.ta_calendar .dateRangeDateTable tbody tr td {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .5s;
+}
+.ta_calendar .dateRangeDateTable thead tr th,
+.ta_calendar .dateRangeDateTable tbody tr th {
+  font-size: 1.5rem;
+  color: #fff;
+}
+.ta_calendar .dateRangeDateTable thead tr td,
+.ta_calendar .dateRangeDateTable tbody tr td {
+  cursor: pointer;
+  font-size: 1.4rem;
+  color: #555555;
+}
+.ta_calendar .dateRangeDateTable thead tr .ta_dateRangeGray,
+.ta_calendar .dateRangeDateTable tbody tr .ta_dateRangeGray {
+  color: #bbbbbb;
+}
+.ta_calendar .dateRangeDateTable tbody tr:first-child {
+  height: 0px;
+}
+.ta_calendar .dateRangeDateTable tbody .i_next,
+.ta_calendar .dateRangeDateTable tbody .i_pre {
+  position: fixed;
+  top: 1rem;
+  width: 2.8rem;
+  height: 2.8rem;
+  background-size: 60%;
+  background-position: center;
+  border: .5rem solid transparent;
+}
+.ta_calendar .dateRangeDateTable tbody .i_next {
+  right: 1rem;
+  background: url("../../img/curriculum/next@2x.png") no-repeat center;
+  background-size: 100%;
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .ta_calendar .dateRangeDateTable tbody .i_next {
+    background: url("../../img/curriculum/next@3x.png") no-repeat center;
+    background-size: 100%;
+  }
+}
+.ta_calendar .dateRangeDateTable tbody .i_pre {
+  left: 1rem;
+  background: url("../../img/curriculum/back@2x.png") no-repeat center;
+  background-size: 100%;
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .ta_calendar .dateRangeDateTable tbody .i_pre {
+    background: url("../../img/curriculum/back@3x.png") no-repeat center;
+    background-size: 100%;
+  }
+}
+.ta_calendar .dateRangeDateTable tbody .i_pre:hover,
+.ta_calendar .dateRangeDateTable tbody .i_next:hover {
+  width: 2.8rem;
+  height: 2.8rem;
+  background-size: 60%;
+  background-position: center;
+  background-color: rgba(100, 150, 250, 0.55);
+  border-radius: 50%;
+  border: 0;
+  transition: all .5s;
+}
+.ta_calendar .dateRangeDateTable tbody .ta_dateRangeSelected {
+  height: 3rem;
+  background: rgba(100, 150, 250, 0.55);
+  color: #fff;
+}
+.ta_calendar .dateRangeDateTable tbody .ta_dateRangeGray {
+  color: #bbbbbb;
+  cursor: default;
+}
+.ta_calendar .dateRangeDateTable tbody .first,
+.ta_calendar .dateRangeDateTable tbody .last {
+  position: relative;
+  height: 3rem;
+  background: #6496fa;
+  transition: all .5s;
+  color: #fff;
+}
+.ta_calendar .dateRangeDateTable tbody .first {
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+}
+.ta_calendar .dateRangeDateTable tbody .last {
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+.ta_calendar .dateRangeDateTable tbody .today {
+  position: relative;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  color: #fff;
+}
+.ta_calendar .dateRangeDateTable tbody .first:after,
+.ta_calendar .dateRangeDateTable tbody .last:after,
+.ta_calendar .dateRangeDateTable tbody .today:after {
+  content: "";
+  display: block;
+}
+.ta_calendar .dateRangeDateTable tbody .today:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  transform: translate3d(-50%, -50%, 0);
+  background: #6496fa;
+  z-index: -1;
+}
+.ta_calendar .dateRangeDateTable tbody .dateRangeToday {
+  background: yellow;
+}

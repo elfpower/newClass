@@ -1,0 +1,52 @@
+@charset "UTF-8";
+@import url("../main.less");
+
+.single-list-page {
+
+}
+
+.single-list {
+
+  > h3 {
+    height: 3.25rem;
+    line-height: 3.25rem;
+    width: 100%;
+    padding-left: 1rem;
+    background: @g-body-bgc;
+    > span {
+      font-size: @g-fs-md;
+      font-weight: 300;
+      color: @g-fc-b-d;
+    }
+  }
+
+  .item {
+    display: block;
+    border-bottom: 1px solid @g-brc-default;
+    > dl {
+      background: @g-con-bgc;
+      padding: 1rem;
+      > dt {
+        margin-bottom: .5rem;
+        .name {
+          font-size: @g-fs-xl;
+          color: @g-fc-b-d;
+        }
+        .price {
+          font-size: @g-fs-md;
+          color: @g-main-blue;
+        }
+      }
+
+      > dd {
+        > span {
+          font-size: @g-fs-md;
+          color: @g-fc-g-d;
+        }
+      }
+    }
+
+  }
+
+}
+

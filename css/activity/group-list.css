@@ -1,0 +1,37 @@
+@charset "UTF-8";
+.group-list > h3 {
+  height: 3.25rem;
+  line-height: 3.25rem;
+  width: 100%;
+  padding-left: 1rem;
+  background: #f5f5f5;
+}
+.group-list > h3 > span {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #333333;
+}
+.group-list .item {
+  display: block;
+  border-bottom: 1px solid #f5f5f5;
+}
+.group-list .item > dl {
+  background: #ffffff;
+  padding: 1rem;
+}
+.group-list .item > dl > dt {
+  margin-bottom: .5rem;
+}
+.group-list .item > dl > dt .name {
+  font-size: 1.5rem;
+  color: #333333;
+}
+.group-list .item > dl > dt .price {
+  font-size: 1.3rem;
+  color: #6496fa;
+}
+.group-list .item > dl > dd > span {
+  display: block;
+  font-size: 1.3rem;
+  color: #999999;
+}

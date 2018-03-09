@@ -1,0 +1,239 @@
+@charset "UTF-8";
+.comment-teacher .top-bg {
+  min-height: 11.5rem;
+  width: 100%;
+  overflow: hidden;
+}
+.comment-teacher .top-bg > img {
+  width: 100%;
+}
+.comment-teacher .con {
+  position: relative;
+  margin: -6.8rem auto 0;
+  padding-bottom: 6rem ;
+  width: 95%;
+  border-radius: .4rem;
+  box-shadow: 0 0.15rem 1.5rem rgba(100, 150, 250, 0.25);
+  background: #fff;
+}
+.comment-teacher .con .avatar-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -3.5rem;
+  margin: 0 auto;
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+}
+.comment-teacher .con .avatar-box > img {
+  width: 100%;
+  border-radius: 50%;
+  border: 1px solid #ebf2ff;
+}
+.comment-teacher .con .name {
+  margin: -3rem auto 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #333333;
+}
+.comment-teacher .con .comment-bar {
+  margin: 0 auto;
+  width: 100%;
+  border-bottom: 0.5rem solid #f5f5f5;
+}
+.comment-teacher .con .comment-bar p:first-child {
+  margin-top: 2rem;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+.comment-teacher .con .comment-bar p:first-child > span {
+  padding: 0 1rem;
+  background: #fff;
+}
+.comment-teacher .con .comment-bar p:first-child:before,
+.comment-teacher .con .comment-bar p:first-child:after {
+  position: absolute;
+  top: 50%;
+  content: "";
+  height: 1px;
+  width: 50%;
+  background: #f5f5f5;
+  z-index: -1;
+}
+.comment-teacher .con .comment-bar p:first-child:before {
+  left: 2rem;
+}
+.comment-teacher .con .comment-bar p:first-child:after {
+  right: 2rem;
+}
+.comment-teacher .con .comment-bar .star-bar {
+  margin: 1rem auto;
+  text-align: center;
+  padding: 0 2rem;
+}
+.comment-teacher .con .comment-bar .star-bar.star-1 .star:nth-child(1) {
+  background: url("../../img/curriculum/star@2x.png") no-repeat center;
+  background-size: 100%;
+  animation: star-act 0.3s;
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .comment-teacher .con .comment-bar .star-bar.star-1 .star:nth-child(1) {
+    background: url("../../img/curriculum/star@3x.png") no-repeat center;
+    background-size: 100%;
+  }
+}
+.comment-teacher .con .comment-bar .star-bar.star-2 .star:nth-child(1),
+.comment-teacher .con .comment-bar .star-bar.star-2 .star:nth-child(2) {
+  background: url("../../img/curriculum/star@2x.png") no-repeat center;
+  background-size: 100%;
+  animation: star-act 0.3s;
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .comment-teacher .con .comment-bar .star-bar.star-2 .star:nth-child(1),
+  .comment-teacher .con .comment-bar .star-bar.star-2 .star:nth-child(2) {
+    background: url("../../img/curriculum/star@3x.png") no-repeat center;
+    background-size: 100%;
+  }
+}
+.comment-teacher .con .comment-bar .star-bar.star-3 .star:nth-child(1),
+.comment-teacher .con .comment-bar .star-bar.star-3 .star:nth-child(2),
+.comment-teacher .con .comment-bar .star-bar.star-3 .star:nth-child(3) {
+  background: url("../../img/curriculum/star@2x.png") no-repeat center;
+  background-size: 100%;
+  animation: star-act 0.3s;
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .comment-teacher .con .comment-bar .star-bar.star-3 .star:nth-child(1),
+  .comment-teacher .con .comment-bar .star-bar.star-3 .star:nth-child(2),
+  .comment-teacher .con .comment-bar .star-bar.star-3 .star:nth-child(3) {
+    background: url("../../img/curriculum/star@3x.png") no-repeat center;
+    background-size: 100%;
+  }
+}
+.comment-teacher .con .comment-bar .star-bar.star-4 .star:nth-child(1),
+.comment-teacher .con .comment-bar .star-bar.star-4 .star:nth-child(2),
+.comment-teacher .con .comment-bar .star-bar.star-4 .star:nth-child(3),
+.comment-teacher .con .comment-bar .star-bar.star-4 .star:nth-child(4) {
+  background: url("../../img/curriculum/star@2x.png") no-repeat center;
+  background-size: 100%;
+  animation: star-act 0.3s;
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .comment-teacher .con .comment-bar .star-bar.star-4 .star:nth-child(1),
+  .comment-teacher .con .comment-bar .star-bar.star-4 .star:nth-child(2),
+  .comment-teacher .con .comment-bar .star-bar.star-4 .star:nth-child(3),
+  .comment-teacher .con .comment-bar .star-bar.star-4 .star:nth-child(4) {
+    background: url("../../img/curriculum/star@3x.png") no-repeat center;
+    background-size: 100%;
+  }
+}
+.comment-teacher .con .comment-bar .star-bar.star-5 .star {
+  background: url("../../img/curriculum/star@2x.png") no-repeat center;
+  background-size: 100%;
+  animation: star-act 0.3s;
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .comment-teacher .con .comment-bar .star-bar.star-5 .star {
+    background: url("../../img/curriculum/star@3x.png") no-repeat center;
+    background-size: 100%;
+  }
+}
+.comment-teacher .con .comment-bar .star-bar > span {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  margin: 0 .25rem;
+  background: url("../../img/curriculum/star1@2x.png") no-repeat center;
+  background-size: 100%;
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .comment-teacher .con .comment-bar .star-bar > span {
+    background: url("../../img/curriculum/star1@3x.png") no-repeat center;
+    background-size: 100%;
+  }
+}
+.comment-teacher .con .comment-bar .degree {
+  margin: 1.5rem auto;
+  text-align: center;
+  color: #f8aa3a;
+  font-size: 1.4rem;
+}
+.comment-teacher .con .keyword-list-bar > ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem .5rem 0;
+}
+.comment-teacher .con .keyword-list-bar > ul > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  margin: 0 .5rem;
+}
+.comment-teacher .con .keyword-list-bar > ul > li > span {
+  padding: .4rem 1rem;
+  border: 1px solid #6e6e6e;
+  border-radius: 2rem;
+  font-size: 1.3rem;
+  transition: border-color 0.5s, background 0.5s, box-shadow 0.5s, color 0.5s;
+}
+.comment-teacher .con .keyword-list-bar > ul .act > span {
+  border-color: #6496fa;
+  background: #6496fa;
+  box-shadow: 0 0.15rem 1rem rgba(100, 150, 250, 0.25);
+  color: #fff;
+}
+.comment-teacher .con .textarea-box {
+  position: relative;
+  margin-top: 1rem;
+  padding: .5rem;
+  overflow: hidden;
+  height: 10rem;
+}
+.comment-teacher .con .textarea-box > textarea {
+  width: 100%;
+  height: 11rem;
+  background: #f5f5f5;
+  padding: 1rem ;
+}
+.comment-teacher .con .textarea-box .limit {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  transition: transform .5s;
+}
+.comment-teacher .con .textarea-box .limit.act {
+  color: #6496fa;
+  transform: scale(1.2) translate3d(0, 0, 0);
+}
+.comment-teacher .btn-box {
+  width: 100%;
+  margin: 4rem auto;
+  text-align: center;
+}
+.comment-teacher .btn-box > a {
+  display: inline-block;
+  font-size: 1.5rem;
+  color: #fff;
+  background: #6496fa;
+  width: 80%;
+  height: 4rem;
+  line-height: 4rem;
+  border-radius: 4rem;
+  box-shadow: 0 0.15rem 2rem rgba(100, 150, 250, 0.25);
+}
+@keyframes star-act {
+  0% {
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+  50% {
+    transform: scale(1.2) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+}

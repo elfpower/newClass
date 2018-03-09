@@ -1,0 +1,137 @@
+@charset "UTF-8";
+.user-address-edit {
+  width: 100%;
+  min-height: 100%;
+}
+.user-address-edit .listwarp {
+  background: #f5f5f5;
+  position: relative;
+  width: 100%;
+  box-shadow: 0 -0.5rem 1rem rgba(100, 150, 250, 0.25);
+}
+.user-address-edit .listwarp > ul {
+  margin-bottom: 0.5rem;
+}
+.user-address-edit .listwarp > ul > li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: #ffffff;
+  min-height: 4.5rem;
+  margin-bottom: 1px;
+  padding: 0 1.5rem;
+}
+.user-address-edit .listwarp > ul > li .title {
+  flex: 0 0 8rem;
+  font-size: 1.5rem;
+  color: #555555;
+}
+.user-address-edit .listwarp > ul > li .text {
+  position: relative;
+  width: 100%;
+  font-size: 1.3rem;
+  color: #bbbbbb;
+}
+.user-address-edit .listwarp > ul > li .text input {
+  width: 100%;
+}
+.user-address-edit .listwarp > ul > li .text textarea {
+  padding: 1rem 0;
+  width: 100%;
+}
+.user-address-edit .listwarp > ul > li .textarea-box {
+  height: 10rem;
+  overflow: hidden;
+}
+.user-address-edit .listwarp > ul > li .textarea-box > textarea {
+  height: 120%;
+}
+.user-address-edit .listwarp > ul > li label.text {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-left: 1rem;
+}
+.user-address-edit .listwarp > ul > li label.text .checkbox {
+  position: absolute;
+  right: 0;
+  width: 5rem;
+  height: 2.5rem;
+  background: transparent;
+  z-index: 1;
+}
+.user-address-edit .listwarp > ul > li label.text .checkbox:checked + .lay {
+  border: 1px solid #6496fa;
+  background: #6496fa;
+}
+.user-address-edit .listwarp > ul > li label.text .checkbox:checked + .lay .circle-btn {
+  left: 2.3rem;
+}
+.user-address-edit .listwarp > ul > li label.text .lay {
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+  width: 5rem;
+  height: 2.5rem;
+  border: 1px solid #eeeeee;
+  border-radius: 2rem;
+  background: #f5f5f5;
+  transition: background-color 0.4s;
+}
+.user-address-edit .listwarp > ul > li label.text .lay .circle-btn {
+  position: absolute;
+  left: .1rem;
+  top: 0;
+  height: 2.4rem;
+  width: 2.4rem;
+  border: 1px solid #eeeeee;
+  border-radius: 50%;
+  background: #fff;
+  transition: left .4s;
+}
+.user-address-edit .btn-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 4.5rem;
+  max-width: 750px;
+}
+.user-address-edit .btn-bar > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #6496fa;
+  line-height: 4.5rem;
+  text-align: center;
+  font-size: 1.6rem;
+  color: #fff;
+}
+.user-address-edit-page .weui-picker-modal {
+  height: 25rem;
+}
+.user-address-edit-page .weui-picker-modal .toolbar-inner {
+  height: 3rem;
+  line-height: 3rem;
+}
+.user-address-edit-page .weui-picker-modal .toolbar-inner .title,
+.user-address-edit-page .weui-picker-modal .toolbar-inner .picker-button {
+  height: 3rem;
+  line-height: 3rem;
+}
+.user-address-edit-page .weui-picker-modal .toolbar-inner .title {
+  font-size: 1.4rem;
+}
+.user-address-edit-page .weui-picker-modal .toolbar-inner .picker-button {
+  right: 1rem;
+  font-size: 1.3rem;
+  color: #6496fa;
+}
+.user-address-edit-page .weui-picker-modal .picker-items {
+  height: 20rem;
+  justify-content: space-around;
+  font-size: 1.3rem;
+}
+.user-address-edit-page .weui-picker-modal .picker-items .picker-items-col {
+  max-width: 33.3%;
+  text-align: center;
+}

@@ -1,0 +1,110 @@
+@charset "UTF-8";
+@import url("../main.less");
+
+@g-top-bar-h : 4rem;
+@g-icon-address-wh : 1.5rem;
+
+@g-gridg-w : 30rem;
+@g-gridg-h : 17.8rem;
+@g-grid-list-img-wh : 4.5rem;
+
+@g-slide-list-item-min-w : 12.5rem;
+@g-slide-list-item-h : 9.5rem;
+
+
+
+.service-hall {
+  .bgi('../../img/service-hall/h-bg',@ps:0 0);
+  background-color: @g-con-bgc;
+  .top-bar {
+    height: @g-top-bar-h;
+    // background: red;
+    padding: @g-con-padding-normal;
+    > a {
+      padding-left: @g-con-padding-max;
+      color: @g-fc-white;
+      font-size: @g-fs-lg;
+      .bgi('../../img/service-hall/address',@g-icon-address-wh,0 center);
+    }
+  }
+
+  .grid {
+    // margin-top: 3rem;
+    max-width: 80%;
+    width: @g-gridg-w;
+    height: @g-gridg-h;
+    background: @g-con-bgc;
+    margin: @g-con-margin-lg auto;
+    border-radius: .4rem;
+    box-shadow: 0 .15rem 1.5rem @g-shadow-blue;
+
+    .grid-list {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: wrap;
+      height: 100%;
+      >li {
+        flex: 0 0 33.3%;
+        text-align: center;
+        height: 50%;
+        >a {
+          display: block;
+          padding: @g-con-padding-normal;
+          >img {
+            width: @g-grid-list-img-wh;
+          }
+          >p {
+            margin-top: @g-con-padding-sm;
+            font-size: @g-fs-md;
+            color: @g-fc-b-d;
+          }
+        }
+      }
+    }
+  }
+
+
+  .slide-bar {
+    margin: @g-con-margin-lg auto;
+    .slide-list {
+      display: flex;
+      width: auto;
+      >li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        min-width: @g-slide-list-item-min-w;
+        height: @g-slide-list-item-h;
+        padding: 0 2.5%;
+        >a {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+          img {
+            width: 100%;
+          }
+          dl {
+            position: absolute;
+            left: 5%;
+            bottom: 1.5rem;
+            color: @g-fc-white;
+          }
+          dt {
+            font-size: @g-fs-xl;
+          }
+          dd {
+            margin-top: .5rem;
+            font-size: @g-fs-normal;
+          }
+        }
+      }
+    }
+  }
+
+
+}

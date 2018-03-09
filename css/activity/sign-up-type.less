@@ -1,0 +1,97 @@
+@charset "UTF-8";
+@import url("../main.less");
+
+
+.sign-up-type-page {
+
+}
+
+
+.sign-up-type {
+  position: relative;
+  background: @g-con-bgc;
+  .type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 10rem;
+    > label {
+      flex: 1;
+      text-align: center;
+      .img-box {
+
+        > img {
+          width: 10.5rem;
+          height: 10.5rem;
+        }
+      }
+      .radio-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+        >input[type = 'radio'] {
+
+          position: relative;
+          width: 1.6rem;
+          height: 1.6rem;
+          border-radius: 50%;
+          background-color: @g-body-bgc;
+          &:after {
+            content: "";
+            position: absolute;
+            border: 1px solid @g-brc-normal;
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+          }
+          &:checked {
+            &:after {
+              border: none;
+              .bgi("../../img/activity/xuan");
+              animation: zoom-anima .3s both;
+            }
+          }
+          &:checked + .text {
+            color: @g-main-blue;
+          }
+        }
+        > span {
+          margin-left: .5rem;
+          font-size: @g-fs-xxl;
+          color: @g-fc-b-d;
+        }
+      }
+
+    }
+  }
+
+  .btn-bar {
+    position: relative;
+    top: 20rem;
+    width: 100%;
+    height: 4rem;
+    .btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 4rem;
+      margin: 0 auto;
+      width: 80%;
+      height: 100%;
+      background: @g-main-blue;
+      color: @g-fc-white;
+      font-size: @g-fs-xl;
+      .g-box-sd(@c:@g-main-blue)
+    }
+  }
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,46 @@
+@charset "UTF-8";
+.tasks > ul > li {
+  width: 100%;
+  height: 7.5rem;
+  background: #ffffff;
+  border-bottom: 1px solid #f5f5f5;
+}
+.tasks > ul > li > a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 7.5rem;
+  padding: 1rem;
+}
+.tasks > ul > li > a .img-box {
+  flex: 0 0 9rem;
+}
+.tasks > ul > li > a .img-box > img {
+  border-radius: .2rem;
+  width: 100%;
+}
+.tasks > ul > li > a .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  margin-left: 1rem;
+  background: url("../../img/task-and-note/jiantou@2x.png") no-repeat 100% center;
+  background-size: 1.4rem;
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .tasks > ul > li > a .title {
+    background: url("../../img/task-and-note/jiantou@3x.png") no-repeat 100% center;
+    background-size: 1.4rem;
+  }
+}
+.tasks > ul > li > a .title .name {
+  flex: 1;
+  font-size: 1.6rem;
+  color: #333333;
+}
+.tasks > ul > li > a .title .more {
+  flex: 0 0 4.5rem;
+  font-size: 1.4rem;
+  color: #999999;
+}

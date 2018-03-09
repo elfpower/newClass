@@ -1,0 +1,48 @@
+@charset "UTF-8";
+.my-activity-page {
+  padding-bottom: 5rem;
+}
+.my-activity {
+  background: #ffffff;
+}
+.my-activity .tab-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #eeeeee;
+}
+.my-activity .tab-bar > li {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  height: 4rem;
+  text-align: center;
+}
+.my-activity .tab-bar > li > span {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: 1.4rem;
+  color: #333333;
+  border-bottom: .2rem solid transparent;
+}
+.my-activity .tab-bar > li.act > span {
+  color: #6496fa;
+  border-bottom: 0.2rem solid #6496fa;
+}
+.my-activity .tab-con {
+  position: relative;
+}
+.my-activity .tab-con > li {
+  position: absolute;
+  top: 0;
+  display: none;
+}
+.my-activity .tab-con > li .con .img-box {
+  display: block;
+  padding: 1rem;
+}
+.my-activity .tab-con > li .con .img-box > img {
+  width: 100%;
+  max-width: 100%;
+}

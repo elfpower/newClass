@@ -1,0 +1,104 @@
+@charset "UTF-8";
+.sign-in-page .sign-in {
+  height: 100%;
+  background: #ffffff;
+}
+.sign-in-page .sign-in label {
+  display: block;
+  position: relative;
+  border-bottom: 1px solid #eeeeee;
+  padding: .5rem 0;
+  margin: 0 auto;
+  width: 90%;
+  height: 5rem;
+}
+.sign-in-page .sign-in label input {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 1.4rem;
+  color: #333333;
+}
+.sign-in-page .sign-in label .tips {
+  position: absolute;
+  bottom: 0;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 1.4rem;
+  color: #bbbbbb;
+  background: #fff;
+  transition: transform .5s,bottom .5s,left .5s;
+}
+.sign-in-page .sign-in label .tips.fix-input-text {
+  left: 0;
+  bottom: 2rem;
+  color: #6496fa;
+  transform: scale(0.8);
+}
+.sign-in-page .sign-in label .see {
+  position: absolute;
+  right: 1rem;
+  bottom: .5rem;
+  z-index: 1;
+  width: 1.6rem;
+  height: 1.6rem;
+  background: url("../../img/sign-in/yicang@2x.png") no-repeat center;
+  background-size: 100%;
+  background-size: 1.6rem;
+  background-position: 95% center;
+  cursor: pointer;
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .sign-in-page .sign-in label .see {
+    background: url("../../img/sign-in/yicang@3x.png") no-repeat center;
+    background-size: 100%;
+  }
+}
+.sign-in-page .sign-in label .see.act {
+  background: url("../../img/sign-in/xianshi@2x.png") no-repeat center;
+  background-size: 100%;
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .sign-in-page .sign-in label .see.act {
+    background: url("../../img/sign-in/xianshi@3x.png") no-repeat center;
+    background-size: 100%;
+  }
+}
+.sign-in-page .sign-in .isforgot-bar {
+  padding-right: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: right;
+}
+.sign-in-page .sign-in .isforgot-bar > a {
+  font-size: 1.3rem;
+  color: #555555;
+}
+.sign-in-page .sign-in .btn-box {
+  margin: 7.5rem auto 0;
+  width: 100%;
+  text-align: center;
+}
+.sign-in-page .sign-in .btn-box > a,
+.sign-in-page .sign-in .btn-box > input[type="button"] {
+  display: inline-block;
+  box-shadow: 0 0.15rem 1rem rgba(100, 150, 250, 0.25);
+  border-radius: 2rem;
+  width: 80%;
+  height: 4rem;
+  line-height: 4rem;
+  font-size: 1.5rem;
+  color: #fff;
+  background: #6496fa;
+  cursor: pointer;
+}
+.sign-in-page .sign-in .register-bar {
+  margin: 1.5rem auto 0;
+  text-align: center;
+}
+.sign-in-page .sign-in .register-bar > a {
+  font-size: 1.4rem;
+  color: #555555;
+}

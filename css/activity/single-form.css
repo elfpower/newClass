@@ -1,0 +1,186 @@
+@charset "UTF-8";
+.single-form-page .single-form {
+  background: #ffffff;
+}
+.single-form-page .single-form .sexy-bar,
+.single-form-page .single-form > label {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  border-bottom: 1px solid #eeeeee;
+  padding: .5rem 1rem;
+  height: 5rem;
+  font-size: 1.5rem;
+  color: #555555;
+}
+.single-form-page .single-form .sexy-bar > span,
+.single-form-page .single-form > label > span {
+  flex: 0 0 7rem;
+}
+.single-form-page .single-form .sexy-bar > input,
+.single-form-page .single-form > label > input {
+  margin-left: 1rem;
+  flex: 1;
+}
+.single-form-page .single-form .sexy-bar > i,
+.single-form-page .single-form > label > i {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  font-size: 1rem;
+  font-style: normal;
+  opacity: 0;
+  color: #ff2f4a;
+}
+.single-form-page .single-form .sexy-bar {
+  display: flex;
+  justify-content: flex-start;
+}
+.single-form-page .single-form .sexy-bar > label {
+  flex: 0 0  20%;
+  display: flex;
+  justify-content: flex-start;
+}
+.single-form-page .single-form .sexy-bar > label > input[type='radio'] {
+  position: relative;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  margin-left: 1rem;
+  background-color: #ffffff;
+}
+.single-form-page .single-form .sexy-bar > label > input[type='radio']:after {
+  content: "";
+  position: absolute;
+  border: 1px solid #eeeeee;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+.single-form-page .single-form .sexy-bar > label > input[type='radio']:checked:after {
+  border: 0;
+  background: url("../../img/user-center/xuanze@2x.png") no-repeat center;
+  background-size: 100%;
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .single-form-page .single-form .sexy-bar > label > input[type='radio']:checked:after {
+    background: url("../../img/user-center/xuanze@3x.png") no-repeat center;
+    background-size: 100%;
+  }
+}
+.single-form-page .single-form .sexy-bar > label > input[type='radio']:checked + span {
+  color: #699fff;
+}
+.single-form-page .single-form .sexy-bar > label > span {
+  margin-left: 1rem;
+  font-size: 1.5rem;
+  color: #555555;
+}
+.single-form-page .single-form .idcard-front,
+.single-form-page .single-form .idcard-back {
+  position: relative;
+  padding: .5rem 1rem;
+}
+.single-form-page .single-form .idcard-front:before,
+.single-form-page .single-form .idcard-back:before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  width: 90%;
+  height: 12rem;
+  background: url("../../img/activity/tianjia@2x.png") no-repeat center 0;
+  background-size: 4rem;
+  text-align: center;
+  line-height: 14rem;
+  z-index: 0;
+  font-size: 1.4rem;
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .single-form-page .single-form .idcard-front:before,
+  .single-form-page .single-form .idcard-back:before {
+    background: url("../../img/activity/tianjia@3x.png") no-repeat center 0;
+    background-size: 4rem;
+  }
+}
+.single-form-page .single-form .idcard-front .border,
+.single-form-page .single-form .idcard-back .border {
+  position: relative;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.single-form-page .single-form .idcard-front .border > canvas,
+.single-form-page .single-form .idcard-back .border > canvas {
+  margin-top: .5rem ;
+  width: 100%;
+  border: 1px dashed #bbbbbb;
+}
+.single-form-page .single-form .idcard-front .border > input[type='file'],
+.single-form-page .single-form .idcard-back .border > input[type='file'] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  opacity: 0;
+  text-align: center;
+}
+.single-form-page .single-form .idcard-front:before {
+  content: "点击上传报名者本人身份证清晰照(正面)";
+}
+.single-form-page .single-form .idcard-back:before {
+  content: "点击上传报名者本人身份证清晰照(背面)";
+}
+.single-form-page .single-form .btn-box {
+  margin: 7.5rem auto 0;
+  width: 100%;
+  text-align: center;
+}
+.single-form-page .single-form .btn-box .btn-submit {
+  display: block;
+  border-radius: 2rem;
+  margin: 0 auto;
+  width: 80%;
+  height: 4rem;
+  line-height: 4rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: none;
+  color: #fff;
+  background: #cccccc;
+}
+.single-form-page .single-form .btn-box .btn-submit.act {
+  box-shadow: 0 0.15rem 1rem rgba(100, 150, 250, 0.25);
+  color: #fff;
+  background: #6496fa;
+}
+.single-form-page .tips-in {
+  animation: tips-anima 0.6s both;
+}
+.single-form-page .tips-out {
+  animation: tips-anima 0.6s reverse;
+}
+@keyframes tips-anima {
+  0% {
+    opacity: 0;
+    transform: scale(0) translateX(200%);
+  }
+  1% {
+    opacity: 0;
+    transform: scale(0) translateX(150%);
+  }
+  25% {
+    transform: scale(0) translateX(110%);
+  }
+  50% {
+    transform: scale(1.5) translateX(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateX(0);
+  }
+}

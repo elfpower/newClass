@@ -1,0 +1,157 @@
+@charset "UTF-8";
+@import url("../main.less");
+
+@g-lesson-img-h : 8rem;
+@g-lesson-img-max-w : 11.4rem;
+
+@g-tabs-height: 4rem;
+.curriculum-page {
+}
+.curriculum {
+  .main {
+    .header-warp {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: @g-con-padding-normal;
+      background: @g-con-bgc;
+      margin-bottom: .5rem;
+
+      .lesson-img {
+        flex: 1 0 30%;
+        max-width: @g-lesson-img-max-w;
+        height: @g-lesson-img-h;
+        line-height: @g-lesson-img-h;
+        text-align: center;
+        overflow: hidden;
+        img {
+          width: 100%;
+          background: @g-fc-black-01;
+        }
+      }
+
+      .lesson-info {
+        flex: 1;
+        margin-left: @g-con-margin-sm;
+        height: @g-lesson-img-h;
+        font-size: @g-fs-normal;
+        color: @g-fc-g-d;
+        .title {
+          font-size: @g-fs-xl;
+          color: @g-fc-b-d;
+        }
+
+        .teacher-name {
+          margin: @g-con-padding-sm 0;
+        }
+
+        .cycle {
+
+        }
+
+        .time {
+
+        }
+      }
+
+    }
+
+    .tab-nav-warp {
+      background: @g-con-bgc;
+      margin-bottom: .05rem;
+      .tabs {
+        display: flex;
+        height: @g-tabs-height;
+        line-height: @g-tabs-height;
+        >li {
+          flex: 1;
+          text-align: center;
+          >a {
+            display: inline-block;
+            height: @g-tabs-height;
+            font-size: @g-fs-lg;
+          }
+        }
+        .act {
+          >a {
+            color: @g-main-blue;
+            border-bottom: .2rem solid @g-main-blue;
+          }
+        }
+      }
+    }
+
+    .con-nav-warp {
+      position: relative;
+      .con-list {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: @g-body-bgc;
+        >li {
+          margin-bottom: .1rem;
+          background: @g-con-bgc;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: @g-con-padding-normal;
+          height: 7rem;
+          .progress {
+            color: @g-fc-g-d;
+            .number {
+              margin-right: .5rem;
+              font-size: @g-fs-lg;
+            }
+            .title {
+              font-size: @g-fs-lg;
+              color: @g-fc-b-d;
+            }
+            .type,
+            .address {
+              display: block;
+              font-size: @g-fs-normal;
+              margin-top: .25rem;
+            }
+          }
+
+          .task {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            text-align: center;
+            .bgi('../../img/curriculum/jiantou',1.2rem, 100% center);
+            >a {
+              margin-right: 1.5rem;
+              color: @g-fc-link-l;
+            }
+            .btn {
+              margin-right: 0;
+              border-radius: 2.5rem;
+              text-align: center;
+              width: 7.5rem;
+              height: 2.5rem;
+              line-height: 2.5rem;
+              font-size: @g-fs-md;
+              color: @g-fc-white;
+              background: @g-main-blue;
+              .g-box-sd (@y: .15rem, @r: .1rem, @c: @g-shadow-blue);
+              cursor: pointer;
+              && {
+                background: yellow;
+              }
+            }
+            >input[type="button"] {
+              background: @g-main-blue;
+            }
+
+          }
+        }
+      }
+    }
+  }
+
+}
+

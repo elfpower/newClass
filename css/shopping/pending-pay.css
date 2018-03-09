@@ -1,0 +1,164 @@
+@charset "UTF-8";
+.pending-pay {
+  background: #f5f5f5;
+}
+.pending-pay .order-list {
+  padding-bottom: 2rem;
+}
+.pending-pay .order-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem 0;
+  background: #ffffff;
+}
+.pending-pay .order-details .teacher {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.pending-pay .order-details .teacher .avatar > img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.pending-pay .order-details .teacher .name {
+  margin-left: 1rem;
+  font-size: 1.5rem;
+  color: #333333;
+}
+.pending-pay .order-details .teacher .name .tips {
+  font-size: 1.2rem;
+  color: #999999;
+}
+.pending-pay .order-details .price {
+  font-size: 1.5rem;
+  color: #ff2f4a;
+}
+.pending-pay .order-title {
+  padding-left: 1rem;
+  font-size: 1.5rem;
+  color: #333333;
+  background: #ffffff;
+}
+.pending-pay .info-bar {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  background: #ffffff;
+  padding: 0 1rem 1rem;
+  border-bottom: 1px solid #f5f5f5;
+}
+.pending-pay .info-bar .date,
+.pending-pay .info-bar .time,
+.pending-pay .info-bar .address {
+  padding-left: 2rem;
+  flex: 0 0 50%;
+}
+.pending-pay .info-bar .date {
+  background: url("../../img/shopping/rili@2x.png") no-repeat 0 center;
+  background-size: 1.2rem;
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .pending-pay .info-bar .date {
+    background: url("../../img/shopping/rili@3x.png") no-repeat 0 center;
+    background-size: 1.2rem;
+  }
+}
+.pending-pay .info-bar .time {
+  background: url("../../img/shopping/shijian@2x.png") no-repeat 0 center;
+  background-size: 1.2rem;
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .pending-pay .info-bar .time {
+    background: url("../../img/shopping/shijian@3x.png") no-repeat 0 center;
+    background-size: 1.2rem;
+  }
+}
+.pending-pay .info-bar .address {
+  background: url("../../img/shopping/dizhi@2x.png") no-repeat 0 center;
+  background-size: 1.2rem;
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .pending-pay .info-bar .address {
+    background: url("../../img/shopping/dizhi@3x.png") no-repeat 0 center;
+    background-size: 1.2rem;
+  }
+}
+.pending-pay .info-bar > time {
+  font-size: 1.2rem;
+  color: #999999;
+}
+.pending-pay .info-bar .address {
+  font-size: 1.2rem;
+  color: #999999;
+}
+.pending-pay .btn-bar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 3.75rem;
+  background: #ffffff;
+  margin-bottom: .5rem;
+}
+.pending-pay .btn-bar > a,
+.pending-pay .btn-bar > span {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  height: 2.5rem;
+  padding: 0 1rem;
+  color: #ffffff;
+  line-height: 2.5rem;
+  border-radius: 2.5rem;
+}
+.pending-pay .btn-bar .btn-cancel {
+  background: #bbbbbb;
+  -webkit-box-shadow: 0 0.1rem 0.5rem #bbbbbb;
+  -moz-box-shadow: 0 0.1rem 0.5rem #bbbbbb;
+  box-shadow: 0 0.1rem 0.5rem #bbbbbb;
+}
+.pending-pay .btn-bar .btn-pay {
+  background: #6496fa;
+  -webkit-box-shadow: 0 0.1rem 0.5rem #6496fa;
+  -moz-box-shadow: 0 0.1rem 0.5rem #6496fa;
+  box-shadow: 0 0.1rem 0.5rem #6496fa;
+}
+@-webkit-keyframes zoom-anima {
+  from {
+    transform: scale(0.6);
+    opacity: .6;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@-moz-keyframes zoom-anima {
+  from {
+    transform: scale(0.6);
+    opacity: .6;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@-ms-keyframes zoom-anima {
+  from {
+    transform: scale(0.6);
+    opacity: .6;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes zoom-anima {
+  from {
+    transform: scale(0.6);
+    opacity: .6;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

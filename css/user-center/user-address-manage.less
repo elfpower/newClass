@@ -1,0 +1,205 @@
+@charset "UTF-8";
+@import url("../main.less");
+
+.user-address-manage {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  margin: 0 auto;
+
+  .listwarp {
+    background: @g-brc-default;
+    position: relative;
+    width: 100%;
+    >ul {
+      >li {
+        background: @g-con-bgc;
+        margin-bottom: .5rem;
+        .name-bar {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          padding: 1rem @g-con-padding-lg .5rem;
+          >span {
+            font-size: @g-fs-xxl;
+            color: @g-fc-b-d;
+          }
+        }
+
+        .address-bar {
+
+          padding: .5rem @g-con-padding-lg;
+          >span {
+            font-size: @g-fs-xxl;
+            color: @g-fc-b-d;
+          }
+        }
+
+        .control-bar {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          height: 3.5rem;
+          border-top: 1px solid @g-brc-default;
+          font-size: @g-fs-lg;
+          color: @g-fc-b-l;
+          >label {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 1rem;
+            input[type = 'radio'] {
+              position: relative;
+              width: 1.6rem;
+              height: 1.6rem;
+              border-radius: 50%;
+              background-color: @g-fc-white;
+              &:after {
+                content: "";
+                position: absolute;
+                border: 1px solid @g-brc-normal;
+                border-radius: 50%;
+                width: 100%;
+                height: 100%;
+              }
+              &:checked {
+                &:after {
+                  border: 0;
+                  .bgi("../../img/user-center/xuanze");
+                }
+              }
+              &:checked + span {
+                color: rgba(105,159,255,1);
+              }
+            }
+            span {
+              margin-left: 1rem;
+            }
+          }
+          .control {
+            padding-right: 1rem;
+            > span,
+            > a {
+              padding-left: 2rem;
+              margin-left: .5rem;
+              font-size: @g-fs-lg;
+              color: @g-fc-b-l;
+            }
+            .edit {
+              .bgi("../../img/user-center/bianji",1.5rem,0);
+            }
+            .delete {
+              .bgi("../../img/user-center/shanchu",1.5rem,0);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .btn-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 4.5rem;
+    max-width: @g-page-max-width;
+    >a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: @g-btn-blue;
+      line-height: 4.5rem;
+      text-align: center;
+      font-size: @g-fs-xxl;
+      color: #fff;
+    }
+  }
+
+  .fix-black-mask {
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: @g-fc-black-03;
+
+  }
+
+  .bn-mask {
+    display: none;
+  }
+
+  .modal-mask {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // background: @g-fc-black-03;
+    .modal-box {
+      position: relative;
+      top: -3rem;
+      width: 80%;
+      min-width: 26rem;
+      background: #fff;
+      border-radius: 1rem;
+      padding: 1rem;
+      .close-btn {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        width: 2.1rem;
+        height: 2.1rem;
+        >img {
+          width: 100%;
+        }
+      }
+
+      .header {
+        margin-top: .5rem;
+        text-align: center;
+        margin-bottom: 2rem;
+        font-weight: 600;
+        font-size: @g-fs-xxl;
+        color: @g-main-blue;
+      }
+
+      .btnwarp {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 2rem;
+        text-align: center;
+        a {
+          width: 11rem;
+          height: 3.2rem;
+          line-height: 3.2rem;
+          font-size: @g-fs-lg;
+          border-radius: 3.2rem;
+        }
+
+        .btn-yes {
+          color: @g-fc-white;
+          background: @g-btn-blue;
+
+        }
+
+        .btn-no {
+          color: @g-btn-blue;
+          background: @g-fc-white;
+          border: 1px solid @g-btn-blue;
+        }
+      }
+
+    }
+  }
+
+}
